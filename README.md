@@ -22,6 +22,8 @@ CONFIGURATION:
 Edit config.php and enter the username, password and database name
 Edit Web/config.php and ensure that the path is correct to the reportsAPI.php.
 
+Create Apache2 vhost with Web as the root directory
+
 USAGE:
 
 To Import a Report:
