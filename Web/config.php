@@ -6,5 +6,5 @@
  * Time: 12:16
  */
 
-$url = "http://$_SERVER[SERVER_NAME]/ReportGenerator/Web/reportAPI.php";
+$url = "http://$_SERVER[SERVER_NAME]/reportAPI.php";
 $severity = '3';
