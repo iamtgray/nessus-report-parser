@@ -6,5 +6,5 @@
  * Time: 12:16
  */
 
-$url = "http://$_SERVER[SERVER_NAME]/reportAPI.php";
-$severity = '3';
+$url = "http://$_SERVER[SERVER_NAME]/ReportGenerator/Web/reportAPI.php"; // Location of the reportAPI
+$severity = '3'; // Minumum Severity to grab from the DB

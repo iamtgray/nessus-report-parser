@@ -15,7 +15,7 @@ class ImportReport extends \Library\ImportAbstract
     protected $reportName;
     protected $reportID;
 
-    public function createReport($xml)
+    public function createReport($xml) // Create report in database and spawn further functions for vulnerabilities and hosts.
     {
         $this->xmlObj = simplexml_load_file($xml);
         $this->reportName = $this->xmlObj->Report[0]['name'] . PHP_EOL;
@@ -31,7 +31,7 @@ class ImportReport extends \Library\ImportAbstract
         return array('reportName' => $this->reportName);
     }
 
-    public function completeReport()
+    public function completeReport() // Complete report - NOT YET IMPLEMENTED
     {
         $completedInsert = $this->getPdo()->prepare('UPDATE reports SET imported = 1 WHERE report_id = ?');
         $reportCompleted = $completedInsert->execute(array('1'));
@@ -42,7 +42,7 @@ class ImportReport extends \Library\ImportAbstract
         return $this->getPdo()->lastInsertId();
     }
 
-    private function createHost()
+    private function createHost() // Create host ready to have vulnerabilities assigned. This will always create a new host for each report.
     {
         $count = 1;
         $insertHost = $this->getPdo()->prepare('INSERT INTO hosts (report_id, host_name) VALUES(?, ?)');
@@ -54,7 +54,8 @@ class ImportReport extends \Library\ImportAbstract
             }
 
             $hostID = $this->getPdo()->lastInsertId();
-            $properties = $host[0]->HostProperties->children(); /* @var SimpleXMLElement $properties */
+            $properties = $host[0]->HostProperties->children();
+            /* @var SimpleXMLElement $properties */
 
             $this->addHostDetails($hostID, $properties);
 
@@ -64,7 +65,7 @@ class ImportReport extends \Library\ImportAbstract
         }
     }
 
-    private function addHostDetails($hostID, $properties)
+    private function addHostDetails($hostID, $properties) // Add all host details such as FQDN, Operating system etc to the database
     {
         foreach ($properties as $tagItem) /* @var SimpleXMLElement $tagItem */ {
 
@@ -85,8 +86,8 @@ class ImportReport extends \Library\ImportAbstract
         }
     }
 
-    private function addVulnerability($host, $hostID)
-    {
+    private function addVulnerability($host, $hostID) // Add vulnerabilities. This will add the vulnerability if it doesn't yet exist,
+    { // and will add a link between the host and that vulnerability including the protocol and port recorded.
         $foundVulnerabilities = array();
 
         foreach ($host->ReportItem as $item) /* @var SimpleXMLElement $item */ {
@@ -110,8 +111,7 @@ class ImportReport extends \Library\ImportAbstract
             }
 
 
-
-            $vulnLinkAdded = $addVulnLink->execute(array($this->reportID, $hostID, $attributes['pluginID'], $attributes['port'],  $attributes['protocol'],));
+            $vulnLinkAdded = $addVulnLink->execute(array($this->reportID, $hostID, $attributes['pluginID'], $attributes['port'], $attributes['protocol'],));
             if (!$vulnLinkAdded) {
                 die('Sorry, we couldn\'t add the vulnerability link: ' . $addVulnLink->errorInfo()[2] . PHP_EOL);
             }
@@ -120,8 +120,6 @@ class ImportReport extends \Library\ImportAbstract
 
         }
 
-
-        #print_r($foundVulnerabilities);
         echo "Found " . count($foundVulnerabilities) . " vulnerabilities" . PHP_EOL;
 
     }
