@@ -110,7 +110,6 @@ class ImportReport extends \Library\ImportAbstract
                 }
 
             }
-            print_r($attributes);
             $vulnAdded = $addVuln->execute(array($attributes['pluginID'], $item['pluginName'], $attributes['svc_name'], $cvss, $attributes['pluginFamily']));
             if (!$vulnAdded) {
                 die('Sorry, we couldn\'t add the vulnerability: ' . $addVuln->errorInfo()[2] . PHP_EOL);
