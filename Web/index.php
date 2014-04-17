@@ -14,17 +14,14 @@ foreach ($reports as $report) {
     echo 'ID: ' . $report->id . '<br>';
     echo 'Name: ' . $report->report_name . '<br>';
     echo 'Created: ' . $report->created . '<br>';
-    echo '<a href="table.php?reportid=' . $report->id . '&severity=' . $severity . '">View this report</a><br><br>';
+    echo '<a href="table.php?reportid=' . $report->id . '&severity=' . $severity . '">View this report</a><br>';
+    echo '<a href="table2.php?reportid=' . $report->id . '&severity=' . $severity . '">View the other report</a><br><br>';
 }
 
 function getReportList($url)
 {
     $query = '?listreports=1';
     $report = curlGet($url, $query);
-    if (!$report)
-    {
-        return "There are no reports to display";
-    }
     return $report;
 }
 

@@ -26,7 +26,7 @@ outputVulnHostPort($reportData); // Picking out only the Vulnerabilities and eac
 
 if (!$reportData)
 {
-    return "There is no data to display, try adjusting your severity settings";
+    die("There is no data to display, try adjusting your severity settings");
 }
 
 function outputVulnHostPort($reportData) // Pass full report array to return hosts, ports and protocols sorted by vulnerability

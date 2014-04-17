@@ -30,17 +30,23 @@ function outputVulnHostPort($reportData) // Pass full report array to return hos
 
     foreach ($reportData as $hostData)
     {
-
-            print($hostData['hostname'] . "\t" . $hostData['OS'] . "\t" . $hostData->vulnerabilities . "\n");
+        if (!$hostData->OS){
+            $OS = "Unknown";
+        } else {
+            $OS = $hostData->OS;
+        }
+        foreach ($hostData->vulnerabilities as $vulnerability)
+        {
+            print(str_replace(array("\r\n", "\r","\n"),"" ,$hostData->hostname) . "\t" . $OS . "\t" . $vulnerability->name . "\t" . "SOMETHING\t" . $vulnerability->severity . "\n");
+        }
 
     }
-    print_r($reportData);
 }
 
 
 function getReportData($reportId, $severity, $url) // Pass reportID, severity and $url from config file to return full report JSON
 {
-    $query = '?testing=1';
+    $query = '?report=2&reportid=' . $reportId . '&severity=' . $severity;
     $report = curlGet($url, $query);
     return $report;
 }
