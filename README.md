@@ -6,23 +6,17 @@ Parser and outputter for Nessus XML reports
 REQUIREMENTS:
 
 apache2
-mysql-sever
-php5-mysql
+sqlite3
+php5-sqlite
 php5-curl
 curl
 
-DATABASE SETUP:
-
-Create a database in MySQL and import the mysql.schema
-
-        mysql -u <USER> -p <DATABASE NAME> < mysql.schema
 
 CONFIGURATION:
 
-Edit config.php and enter the username, password and database name
+Create Apache2 vhost with Web as the root directory
 Edit Web/config.php and ensure that the path is correct to the reportsAPI.php.
 
-Create Apache2 vhost with Web as the root directory
 
 USAGE:
 
@@ -35,3 +29,8 @@ Run import.php with the Nessus xml report filename as an argument
 To view the output:
 
 Navigate to Web/index.php from a browser.
+
+Updates:
+
+16th April 2014:
+    Changed storage engine from MySQL to SQLite3

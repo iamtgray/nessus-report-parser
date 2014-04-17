@@ -11,8 +11,6 @@
 // reportid=<REPORTID>&severity=<SEVERITY>
 // listreports=1
 
-$config = require(__DIR__ . '/../config.php');
-
 spl_autoload_register(function ($className) {
     $fileName = __DIR__ . '/' . str_replace('\\', '/', $className) . '.php';
 
@@ -24,11 +22,12 @@ spl_autoload_register(function ($className) {
 });
 
 try { // Create PDO Object
-    $pdo = new PDO(
-        'mysql:host=' . $config['db']['hostname'] . ';dbname=' . $config['db']['database'],
-        $config['db']['username'],
-        $config['db']['password']
-    );
+#    $pdo = new PDO(
+#        'mysql:host=' . $config['db']['hostname'] . ';dbname=' . $config['db']['database'],
+#        $config['db']['username'],
+#        $config['db']['password']
+#    );
+    $pdo = new PDO('sqlite:../reports.sqlite');
 } catch (PDOException $pdoError) {
     echo $pdoError->getMessage();
     exit;
