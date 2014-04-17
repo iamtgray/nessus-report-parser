@@ -94,7 +94,7 @@ class ImportReport extends \Library\ImportAbstract
             $attributes = array();
 
 
-            $addVuln = $this->getPdo()->prepare('INSERT INTO vulnerabilities (pluginID, vulnerability, svc_name, severity, pluginFamily) VALUES(?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE pluginID=PluginID');
+            $addVuln = $this->getPdo()->prepare('INSERT OR REPLACE INTO vulnerabilities (pluginID, vulnerability, svc_name, severity, pluginFamily) VALUES(?, ?, ?, ?, ?)');
             $addVulnLink = $this->getPdo()->prepare('INSERT INTO host_vuln_link (report_id, host_id, plugin_id, port, protocol) VALUES(?, ?, ?, ?, ?)');
 
             foreach ($item->attributes() as $attribute => $value) {

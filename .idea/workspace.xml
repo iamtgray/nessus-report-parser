@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="" />
+    <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql.schema" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports.sqlite" afterPath="$PROJECT_DIR$/reports.sqlite" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ImportReport.php" afterPath="$PROJECT_DIR$/Library/ImportReport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="nessus-report-parser.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,35 +29,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mysql.schema" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysql.schema">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="44" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="import.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/import.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="6" selection-start="710" selection-end="710" vertical-scroll-proportion="-15.333333" vertical-offset="112" max-vertical-offset="720">
+            <state line="45" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImportReport.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="11" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImportReport.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Library/ImportReport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="0" selection-start="4781" selection-end="4781" vertical-scroll-proportion="-77.5" vertical-offset="0" max-vertical-offset="1950">
+            <state line="100" column="0" selection-start="4222" selection-end="4222" vertical-scroll-proportion="0.46195653" vertical-offset="1000" max-vertical-offset="1920">
               <folding>
-                <marker date="1397571049000" expanded="true" signature="480:535" placeholder="INSERT INTO ..." />
-                <marker date="1397571049000" expanded="true" signature="1039:1090" placeholder="UPDATE repor..." />
-                <marker date="1397571049000" expanded="true" signature="1481:1534" placeholder="INSERT INTO ..." />
-                <marker date="1397571049000" expanded="true" signature="3367:3493" placeholder="INSERT INTO ..." />
-                <marker date="1397571049000" expanded="true" signature="3494:3518" placeholder="UPDATE plugi..." />
-                <marker date="1397571049000" expanded="true" signature="3575:3671" placeholder="INSERT INTO ..." />
+                <marker date="1397732773000" expanded="true" signature="568:623" placeholder="INSERT INTO ..." />
+                <marker date="1397732773000" expanded="true" signature="1168:1219" placeholder="UPDATE repor..." />
+                <marker date="1397732773000" expanded="true" signature="1717:1770" placeholder="INSERT INTO ..." />
+                <marker date="1397732773000" expanded="true" signature="4053:4149" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -60,7 +64,7 @@
       <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="165">
+            <state line="8" column="37" selection-start="143" selection-end="143" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="165">
               <folding />
             </state>
           </provider>
@@ -69,22 +73,33 @@
       <file leaf-file-name="reportAPI.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/reportAPI.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="735">
+            <state line="47" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-29.375" vertical-offset="0" max-vertical-offset="795">
+              <folding>
+                <element signature="e#6#104#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1155">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reports.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Reports.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/Library/Reports.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.5251142" vertical-offset="0" max-vertical-offset="1275">
+            <state line="30" column="0" selection-start="766" selection-end="766" vertical-scroll-proportion="-4.5" vertical-offset="267" max-vertical-offset="1200">
               <folding>
-                <marker date="1397572912000" expanded="true" signature="285:306" placeholder="SELECT * FRO..reports..." />
-                <marker date="1397572912000" expanded="true" signature="864:936" placeholder="SELECT DISTI..host_vuln_link..." />
-                <marker date="1397572912000" expanded="true" signature="988:1074" placeholder="SELECT host_..host_vuln_link..." />
-                <marker date="1397572912000" expanded="true" signature="1127:1165" placeholder="SELECT host_..hosts..." />
-                <marker date="1397572912000" expanded="true" signature="1217:1282" placeholder="SELECT * FRO..vulnerabilities..." />
+                <marker date="1397649389000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+                <marker date="1397649389000" expanded="true" signature="1013:1085" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1397649389000" expanded="true" signature="1137:1223" placeholder="SELECT host_..host_vuln_link..." />
+                <marker date="1397649389000" expanded="true" signature="1276:1314" placeholder="SELECT host_..hosts..." />
+                <marker date="1397649389000" expanded="true" signature="1366:1430" placeholder="SELECT * FRO..vulnerabilities..." />
               </folding>
             </state>
           </provider>
@@ -93,7 +108,7 @@
       <file leaf-file-name="ImportAbstract.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Library/ImportAbstract.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1275">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
               <folding />
             </state>
           </provider>
@@ -113,8 +128,12 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/mysql.schema" />
-        <option value="$PROJECT_DIR$/Library/ImportReport.php" />
         <option value="$PROJECT_DIR$/Web/Library/Reports.php" />
+        <option value="$PROJECT_DIR$/Web/config.php" />
+        <option value="$PROJECT_DIR$/Web/reportAPI.php" />
+        <option value="$PROJECT_DIR$/import.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Library/ImportReport.php" />
       </list>
     </option>
   </component>
@@ -122,7 +141,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="778" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -150,6 +169,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -178,50 +198,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -275,26 +267,33 @@
       <created>1397572944191</created>
       <updated>1397572944191</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed storage engine from MySQL to SQLite3">
+      <created>1397731379567</created>
+      <updated>1397731379567</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="778" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1920" height="1054" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USERS">
@@ -311,22 +310,64 @@
     <MESSAGE value="Added MySQL schema file" />
     <MESSAGE value="Re-added ImportReport.php contents" />
     <MESSAGE value="Updated MySQL query for severity to be greater than OR equal to instead of just greater than." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated MySQL query for severity to be greater than OR equal to instead of just greater than." />
+    <MESSAGE value="Changed storage engine from MySQL to SQLite3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed storage engine from MySQL to SQLite3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mysql.schema">
+    <entry file="file://$PROJECT_DIR$/import.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="44" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
+        <state line="37" column="6" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/import.php">
+    <entry file="file://$PROJECT_DIR$/Library/ImportReport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="6" selection-start="710" selection-end="710" vertical-scroll-proportion="-15.333333" vertical-offset="112" max-vertical-offset="720">
+        <state line="129" column="0" selection-start="4781" selection-end="4781" vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="2025">
+          <folding>
+            <marker date="1397732773000" expanded="true" signature="568:623" placeholder="INSERT INTO ..." />
+            <marker date="1397732773000" expanded="true" signature="1168:1219" placeholder="UPDATE repor..." />
+            <marker date="1397732773000" expanded="true" signature="1717:1770" placeholder="INSERT INTO ..." />
+            <marker date="1397732773000" expanded="true" signature="4053:4149" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/reportAPI.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+          <folding>
+            <element signature="e#6#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/Library/Reports.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1275">
+          <folding>
+            <marker date="1397649389000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+            <marker date="1397649389000" expanded="true" signature="1013:1085" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397649389000" expanded="true" signature="1137:1223" placeholder="SELECT host_..host_vuln_link..." />
+            <marker date="1397649389000" expanded="true" signature="1276:1314" placeholder="SELECT host_..hosts..." />
+            <marker date="1397649389000" expanded="true" signature="1366:1430" placeholder="SELECT * FRO..vulnerabilities..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/ImportAbstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
@@ -338,43 +379,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Library/ImportReport.php">
+    <entry file="file://$PROJECT_DIR$/Web/Library/Reports.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="0" selection-start="4781" selection-end="4781" vertical-scroll-proportion="-77.5" vertical-offset="0" max-vertical-offset="1950">
+        <state line="30" column="0" selection-start="766" selection-end="766" vertical-scroll-proportion="-4.5" vertical-offset="267" max-vertical-offset="1200">
           <folding>
-            <marker date="1397571049000" expanded="true" signature="480:535" placeholder="INSERT INTO ..." />
-            <marker date="1397571049000" expanded="true" signature="1039:1090" placeholder="UPDATE repor..." />
-            <marker date="1397571049000" expanded="true" signature="1481:1534" placeholder="INSERT INTO ..." />
-            <marker date="1397571049000" expanded="true" signature="3367:3493" placeholder="INSERT INTO ..." />
-            <marker date="1397571049000" expanded="true" signature="3494:3518" placeholder="UPDATE plugi..." />
-            <marker date="1397571049000" expanded="true" signature="3575:3671" placeholder="INSERT INTO ..." />
+            <marker date="1397649389000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+            <marker date="1397649389000" expanded="true" signature="1013:1085" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397649389000" expanded="true" signature="1137:1223" placeholder="SELECT host_..host_vuln_link..." />
+            <marker date="1397649389000" expanded="true" signature="1276:1314" placeholder="SELECT host_..hosts..." />
+            <marker date="1397649389000" expanded="true" signature="1366:1430" placeholder="SELECT * FRO..vulnerabilities..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="632">
+        <state line="8" column="37" selection-start="143" selection-end="143" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="165">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/reportAPI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+        <state line="47" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-29.375" vertical-offset="0" max-vertical-offset="795">
+          <folding>
+            <element signature="e#6#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1155">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/Library/Reports.php">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.5251142" vertical-offset="0" max-vertical-offset="1275">
+        <state line="9" column="11" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/ImportReport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="0" selection-start="4222" selection-end="4222" vertical-scroll-proportion="0.46195653" vertical-offset="1000" max-vertical-offset="1920">
           <folding>
-            <marker date="1397572912000" expanded="true" signature="285:306" placeholder="SELECT * FRO..reports..." />
-            <marker date="1397572912000" expanded="true" signature="864:936" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397572912000" expanded="true" signature="988:1074" placeholder="SELECT host_..host_vuln_link..." />
-            <marker date="1397572912000" expanded="true" signature="1127:1165" placeholder="SELECT host_..hosts..." />
-            <marker date="1397572912000" expanded="true" signature="1217:1282" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1397732773000" expanded="true" signature="568:623" placeholder="INSERT INTO ..." />
+            <marker date="1397732773000" expanded="true" signature="1168:1219" placeholder="UPDATE repor..." />
+            <marker date="1397732773000" expanded="true" signature="1717:1770" placeholder="INSERT INTO ..." />
+            <marker date="1397732773000" expanded="true" signature="4053:4149" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
