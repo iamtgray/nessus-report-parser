@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ImportReport.php" afterPath="$PROJECT_DIR$/Library/ImportReport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports.sqlite" afterPath="$PROJECT_DIR$/reports.sqlite" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/index.php" afterPath="$PROJECT_DIR$/Web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/table.php" afterPath="$PROJECT_DIR$/Web/table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nessus-report-parser.iws" />
@@ -44,16 +46,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImportReport.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ImportReport.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Library/ImportReport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="0" selection-start="4586" selection-end="4586" vertical-scroll-proportion="0.7336956" vertical-offset="930" max-vertical-offset="1995">
+            <state line="91" column="40" selection-start="3759" selection-end="3759" vertical-scroll-proportion="-15.0" vertical-offset="930" max-vertical-offset="1995">
               <folding>
                 <marker date="1397740653000" expanded="true" signature="620:675" placeholder="INSERT INTO ..." />
                 <marker date="1397740653000" expanded="true" signature="1220:1271" placeholder="UPDATE repor..." />
                 <marker date="1397740653000" expanded="true" signature="1769:1822" placeholder="INSERT INTO ..." />
                 <marker date="1397740653000" expanded="true" signature="4271:4367" placeholder="INSERT INTO ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="616" selection-end="695" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="615">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="table.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="table.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Web/table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="22" selection-start="1329" selection-end="1329" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="1155">
+            <state line="26" column="17" selection-start="875" selection-end="875" vertical-scroll-proportion="0.28938907" vertical-offset="45" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -141,12 +152,13 @@
         <option value="$PROJECT_DIR$/import.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Web/Library/WebAbstract.php" />
-        <option value="$PROJECT_DIR$/Web/table.php" />
         <option value="$PROJECT_DIR$/Web/reportAPI.php" />
         <option value="$PROJECT_DIR$/Web/table2.php" />
         <option value="$PROJECT_DIR$/Web/Library/Reports.php" />
         <option value="$PROJECT_DIR$/Web/config.php" />
         <option value="$PROJECT_DIR$/Library/ImportReport.php" />
+        <option value="$PROJECT_DIR$/Web/index.php" />
+        <option value="$PROJECT_DIR$/Web/table.php" />
       </list>
     </option>
   </component>
@@ -323,7 +335,11 @@
       <created>1397740614664</created>
       <updated>1397740614664</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Removed debugging output">
+      <created>1397740665357</created>
+      <updated>1397740665357</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -336,7 +352,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -371,7 +387,8 @@
     <MESSAGE value="Updated how the report viewer deals with severity score" />
     <MESSAGE value="Updated how the report viewer deals with severity score&#10;" />
     <MESSAGE value="Corrected the CVSS score" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected the CVSS score" />
+    <MESSAGE value="Removed debugging output" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed debugging output" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -450,13 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="957">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/Library/WebAbstract.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="0" selection-start="360" selection-end="360" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="855">
@@ -467,13 +477,6 @@
     <entry file="file://$PROJECT_DIR$/Web/table2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="25" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="22" selection-start="1329" selection-end="1329" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="1155">
           <folding />
         </state>
       </provider>
@@ -534,13 +537,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Library/ImportReport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="0" selection-start="4586" selection-end="4586" vertical-scroll-proportion="0.7336956" vertical-offset="930" max-vertical-offset="1995">
+        <state line="91" column="40" selection-start="3759" selection-end="3759" vertical-scroll-proportion="-15.0" vertical-offset="930" max-vertical-offset="1995">
           <folding>
             <marker date="1397740653000" expanded="true" signature="620:675" placeholder="INSERT INTO ..." />
             <marker date="1397740653000" expanded="true" signature="1220:1271" placeholder="UPDATE repor..." />
             <marker date="1397740653000" expanded="true" signature="1769:1822" placeholder="INSERT INTO ..." />
             <marker date="1397740653000" expanded="true" signature="4271:4367" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="616" selection-end="695" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="17" selection-start="875" selection-end="875" vertical-scroll-proportion="0.28938907" vertical-offset="45" max-vertical-offset="1215">
+          <folding />
         </state>
       </provider>
     </entry>

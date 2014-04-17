@@ -24,6 +24,10 @@ $reportData = json_decode(getReportData($reportId, $severity, $url)); //Get all 
 
 outputVulnHostPort($reportData); // Picking out only the Vulnerabilities and each host, protocol and port from the full data.
 
+if (!$reportData)
+{
+    return "There is no data to display, try adjusting your severity settings";
+}
 
 function outputVulnHostPort($reportData) // Pass full report array to return hosts, ports and protocols sorted by vulnerability
 {

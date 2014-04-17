@@ -21,6 +21,10 @@ function getReportList($url)
 {
     $query = '?listreports=1';
     $report = curlGet($url, $query);
+    if (!$report)
+    {
+        return "There are no reports to display";
+    }
     return $report;
 }
 
