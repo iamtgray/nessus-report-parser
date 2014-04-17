@@ -13,7 +13,8 @@ $reports = json_decode(getReportList($url));
 
 if (!$reports)
 {
-    echo "There are no reports available on the system";
+    echo "There are no reports available on the system<br>";
+    echo "To import a report, run import.php [Report file name] from the program directory";
 }
 foreach ($reports as $report) {
     echo 'ID: ' . $report->id . '<br>';
