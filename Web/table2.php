@@ -27,6 +27,13 @@ outputVulnHostPort($reportData); // Picking out only the Vulnerabilities and eac
 
 function outputVulnHostPort($reportData) // Pass full report array to return hosts, ports and protocols sorted by vulnerability
 {
+
+    foreach ($reportData as $hostData)
+    {
+
+            print($hostData['hostname'] . "\t" . $hostData['OS'] . "\t" . $hostData->vulnerabilities . "\n");
+
+    }
     print_r($reportData);
 }
 

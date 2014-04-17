@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="Completed SQLite integration&#10;">
+    <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Library/Reports.php" afterPath="$PROJECT_DIR$/Web/Library/Reports.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/reportAPI.php" afterPath="$PROJECT_DIR$/Web/reportAPI.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/table2.php" afterPath="$PROJECT_DIR$/Web/table2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,7 +30,16 @@
       <file leaf-file-name="table2.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/table2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1017" selection-end="1017" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="795">
+            <state line="36" column="25" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="900">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="111" selection-start="1436" selection-end="1531" vertical-scroll-proportion="-16.125" vertical-offset="153" max-vertical-offset="1155">
               <folding />
             </state>
           </provider>
@@ -40,17 +48,17 @@
       <file leaf-file-name="Reports.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Web/Library/Reports.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="38" selection-start="2260" selection-end="2260" vertical-scroll-proportion="0.6752412" vertical-offset="180" max-vertical-offset="1740">
+            <state line="67" column="5" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.6752412" vertical-offset="300" max-vertical-offset="1710">
               <folding>
-                <marker date="1397736264000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
-                <marker date="1397736264000" expanded="true" signature="953:1014" placeholder="SELECT DISTI..host_vuln_link..." />
-                <marker date="1397736264000" expanded="true" signature="1067:1123" placeholder="SELECT host_..hosts..." />
-                <marker date="1397736264000" expanded="true" signature="1182:1259" placeholder="SELECT DISTI..host_vuln_link..." />
-                <marker date="1397736264000" expanded="true" signature="1311:1371" placeholder="SELECT vulne..vulnerabilities..." />
-                <marker date="1397736264000" expanded="true" signature="2666:2738" placeholder="SELECT DISTI..host_vuln_link..." />
-                <marker date="1397736264000" expanded="true" signature="2790:2876" placeholder="SELECT host_..host_vuln_link..." />
-                <marker date="1397736264000" expanded="true" signature="2929:2967" placeholder="SELECT host_..hosts..." />
-                <marker date="1397736264000" expanded="true" signature="3019:3083" placeholder="SELECT * FRO..vulnerabilities..." />
+                <marker date="1397736950000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+                <marker date="1397736950000" expanded="true" signature="953:1014" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1397736950000" expanded="true" signature="1067:1123" placeholder="SELECT host_..hosts..." />
+                <marker date="1397736950000" expanded="true" signature="1182:1259" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1397736950000" expanded="true" signature="1311:1381" placeholder="SELECT vulne..vulnerabilities..." />
+                <marker date="1397736950000" expanded="true" signature="2867:2939" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1397736950000" expanded="true" signature="2991:3077" placeholder="SELECT host_..host_vuln_link..." />
+                <marker date="1397736950000" expanded="true" signature="3130:3168" placeholder="SELECT host_..hosts..." />
+                <marker date="1397736950000" expanded="true" signature="3220:3284" placeholder="SELECT * FRO..vulnerabilities..." />
               </folding>
             </state>
           </provider>
@@ -88,8 +96,8 @@
         <option value="$PROJECT_DIR$/Web/Library/WebAbstract.php" />
         <option value="$PROJECT_DIR$/Web/table.php" />
         <option value="$PROJECT_DIR$/Web/reportAPI.php" />
-        <option value="$PROJECT_DIR$/Web/table2.php" />
         <option value="$PROJECT_DIR$/Web/Library/Reports.php" />
+        <option value="$PROJECT_DIR$/Web/table2.php" />
       </list>
     </option>
   </component>
@@ -268,7 +276,11 @@
       <created>1397733535422</created>
       <updated>1397733535422</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding second table">
+      <created>1397736280466</created>
+      <updated>1397736280466</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -311,7 +323,8 @@
     <MESSAGE value="Updated Vulnerability add query to allow sqlite compatibility" />
     <MESSAGE value="Completed SQLite integration" />
     <MESSAGE value="Completed SQLite integration&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed SQLite integration&#10;" />
+    <MESSAGE value="Adding second table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding second table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -356,15 +369,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1275">
           <folding>
-            <marker date="1397736264000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
-            <marker date="1397736264000" expanded="true" signature="953:1014" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397736264000" expanded="true" signature="1067:1123" placeholder="SELECT host_..hosts..." />
-            <marker date="1397736264000" expanded="true" signature="1182:1259" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397736264000" expanded="true" signature="1311:1371" placeholder="SELECT vulne..vulnerabilities..." />
-            <marker date="1397736264000" expanded="true" signature="2666:2738" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397736264000" expanded="true" signature="2790:2876" placeholder="SELECT host_..host_vuln_link..." />
-            <marker date="1397736264000" expanded="true" signature="2929:2967" placeholder="SELECT host_..hosts..." />
-            <marker date="1397736264000" expanded="true" signature="3019:3083" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1397736950000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+            <marker date="1397736950000" expanded="true" signature="953:1014" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397736950000" expanded="true" signature="1067:1123" placeholder="SELECT host_..hosts..." />
+            <marker date="1397736950000" expanded="true" signature="1182:1259" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397736950000" expanded="true" signature="1311:1381" placeholder="SELECT vulne..vulnerabilities..." />
+            <marker date="1397736950000" expanded="true" signature="2867:2939" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397736950000" expanded="true" signature="2991:3077" placeholder="SELECT host_..host_vuln_link..." />
+            <marker date="1397736950000" expanded="true" signature="3130:3168" placeholder="SELECT host_..hosts..." />
+            <marker date="1397736950000" expanded="true" signature="3220:3284" placeholder="SELECT * FRO..vulnerabilities..." />
           </folding>
         </state>
       </provider>
@@ -430,13 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="731" selection-end="731" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="1155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/reportAPI.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="41" selection-start="985" selection-end="985" vertical-scroll-proportion="-26.25" vertical-offset="0" max-vertical-offset="870">
@@ -446,26 +452,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Web/table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="111" selection-start="1436" selection-end="1531" vertical-scroll-proportion="-16.125" vertical-offset="153" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Web/table2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1017" selection-end="1017" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="795">
+        <state line="36" column="25" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="900">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/Library/Reports.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="38" selection-start="2260" selection-end="2260" vertical-scroll-proportion="0.6752412" vertical-offset="180" max-vertical-offset="1740">
+        <state line="67" column="5" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.6752412" vertical-offset="300" max-vertical-offset="1710">
           <folding>
-            <marker date="1397736264000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
-            <marker date="1397736264000" expanded="true" signature="953:1014" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397736264000" expanded="true" signature="1067:1123" placeholder="SELECT host_..hosts..." />
-            <marker date="1397736264000" expanded="true" signature="1182:1259" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397736264000" expanded="true" signature="1311:1371" placeholder="SELECT vulne..vulnerabilities..." />
-            <marker date="1397736264000" expanded="true" signature="2666:2738" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397736264000" expanded="true" signature="2790:2876" placeholder="SELECT host_..host_vuln_link..." />
-            <marker date="1397736264000" expanded="true" signature="2929:2967" placeholder="SELECT host_..hosts..." />
-            <marker date="1397736264000" expanded="true" signature="3019:3083" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1397736950000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+            <marker date="1397736950000" expanded="true" signature="953:1014" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397736950000" expanded="true" signature="1067:1123" placeholder="SELECT host_..hosts..." />
+            <marker date="1397736950000" expanded="true" signature="1182:1259" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397736950000" expanded="true" signature="1311:1381" placeholder="SELECT vulne..vulnerabilities..." />
+            <marker date="1397736950000" expanded="true" signature="2867:2939" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397736950000" expanded="true" signature="2991:3077" placeholder="SELECT host_..host_vuln_link..." />
+            <marker date="1397736950000" expanded="true" signature="3130:3168" placeholder="SELECT host_..hosts..." />
+            <marker date="1397736950000" expanded="true" signature="3220:3284" placeholder="SELECT * FRO..vulnerabilities..." />
           </folding>
         </state>
       </provider>
