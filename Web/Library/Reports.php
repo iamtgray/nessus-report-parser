@@ -74,7 +74,7 @@ class Reports extends \Library\WebAbstract
         $getPluginIDs = $this->getPdo()->prepare('SELECT DISTINCT(plugin_id) as id FROM host_vuln_link WHERE report_id = ?');
         $getHostIDs = $this->getPdo()->prepare('SELECT host_id, port, protocol FROM host_vuln_link WHERE plugin_id =? and report_id =?');
         $getHostName = $this->getPdo()->prepare('SELECT host_name FROM hosts WHERE id=?');
-        $getDetails = $this->getPdo()->prepare('SELECT * FROM vulnerabilities WHERE pluginID = ? AND severity >?');
+        $getDetails = $this->getPdo()->prepare('SELECT * FROM vulnerabilities WHERE pluginID = ? AND severity >=?');
 
 
         $getPluginIDs->execute(array($reportID));
@@ -89,6 +89,8 @@ class Reports extends \Library\WebAbstract
             $getDetails->execute(array($plugin, $severity));
             $details = $getDetails->fetchAll(\PDO::FETCH_ASSOC);
             if (!$details) {
+                $index = array_search($plugin, $pluginIDs);
+                unset($pluginIDs[$index]);
                 continue;
             }
 
