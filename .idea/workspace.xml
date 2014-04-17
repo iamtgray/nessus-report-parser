@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="Added some error checking for no data responses&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports.sqlite" afterPath="$PROJECT_DIR$/reports.sqlite" />
+    <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/index.php" afterPath="$PROJECT_DIR$/Web/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/reportAPI.php" afterPath="$PROJECT_DIR$/Web/reportAPI.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/table.php" afterPath="$PROJECT_DIR$/Web/table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/table2.php" afterPath="$PROJECT_DIR$/Web/table2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nessus-report-parser.iws" />
@@ -39,19 +36,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="36" selection-start="734" selection-end="734" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="570">
+            <state line="15" column="56" selection-start="298" selection-end="298" vertical-scroll-proportion="0.1607717" vertical-offset="0" max-vertical-offset="933">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reportAPI.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="reportAPI.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/reportAPI.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="10" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.7073955" vertical-offset="0" max-vertical-offset="933">
+            <state line="44" column="10" selection-start="1088" selection-end="1088" vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="885">
               <folding>
                 <element signature="e#6#104#0" expanded="true" />
               </folding>
@@ -108,9 +105,9 @@
         <option value="$PROJECT_DIR$/Library/ImportReport.php" />
         <option value="$PROJECT_DIR$/Web/table.php" />
         <option value="$PROJECT_DIR$/Web/Library/Reports.php" />
-        <option value="$PROJECT_DIR$/Web/index.php" />
         <option value="$PROJECT_DIR$/Web/table2.php" />
         <option value="$PROJECT_DIR$/Web/reportAPI.php" />
+        <option value="$PROJECT_DIR$/Web/index.php" />
       </list>
     </option>
   </component>
@@ -179,38 +176,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -223,6 +188,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Web" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testReports" />
     </key>
   </component>
   <component name="RunManager">
@@ -313,12 +281,16 @@
       <created>1397740825268</created>
       <updated>1397740825268</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Completed secondary table">
+      <created>1397742980775</created>
+      <updated>1397742980775</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1054" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -326,7 +298,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -363,7 +335,8 @@
     <MESSAGE value="Corrected the CVSS score" />
     <MESSAGE value="Removed debugging output" />
     <MESSAGE value="Added some error checking for no data responses&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some error checking for no data responses&#10;" />
+    <MESSAGE value="Completed secondary table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed secondary table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -449,16 +422,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bch_full_merged.nessus">
+    <entry file="file://$PROJECT_DIR$/TestReports/bch_full_merged.nessus">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4414" column="1" selection-start="557890" selection-end="557905" vertical-scroll-proportion="-9.461538" vertical-offset="65964" max-vertical-offset="636015">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="957">
           <folding />
         </state>
       </provider>
@@ -486,13 +452,6 @@
             <marker date="1397740653000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
             <marker date="1397740653000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="36" selection-start="734" selection-end="734" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="570">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -529,10 +488,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/reportAPI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="10" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.7073955" vertical-offset="0" max-vertical-offset="933">
+        <state line="44" column="10" selection-start="1088" selection-end="1088" vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="885">
           <folding>
             <element signature="e#6#104#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="56" selection-start="298" selection-end="298" vertical-scroll-proportion="0.1607717" vertical-offset="0" max-vertical-offset="933">
+          <folding />
         </state>
       </provider>
     </entry>

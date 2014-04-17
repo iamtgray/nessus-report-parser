@@ -10,6 +10,11 @@ require_once(__DIR__ . "/config.php");
 
 echo 'Imported Reports<br><br>';
 $reports = json_decode(getReportList($url));
+
+if (!$reports)
+{
+    echo "There are no reports available on the system";
+}
 foreach ($reports as $report) {
     echo 'ID: ' . $report->id . '<br>';
     echo 'Name: ' . $report->report_name . '<br>';
