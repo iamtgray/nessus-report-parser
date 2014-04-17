@@ -27,37 +27,13 @@ outputVulnHostPort($reportData); // Picking out only the Vulnerabilities and eac
 
 function outputVulnHostPort($reportData) // Pass full report array to return hosts, ports and protocols sorted by vulnerability
 {
-    foreach ($reportData as $vulnerability) {
-        echo PHP_EOL . $vulnerability[0][0]->vulnerability . PHP_EOL; // Output Vulnerability name
-
-        if (count($vulnerability[0]) <= 4) // Setting up the loop variable to create 4 columns
-        {
-            $loop = 4 - count($vulnerability[0]);
-        } else {
-            $loop = 0;
-        }
-
-        foreach ($vulnerability[1] as $hostObj) {
-            if ($loop < 3) {
-                print($hostObj->host_id . "\t" . strtoupper($hostObj->protocol) . "/" . $hostObj->port . "\t"); // Output the first 3 columns with tab delimiters
-                $loop++;
-            }
-
-            if ($loop == 3) {
-                print($hostObj->host_id . "\t" . strtoupper($hostObj->protocol) . "/" . $hostObj->port . "\n"); // Output the final column with carriage return
-                $loop = 0;
-            }
-        }
-
-        echo "\n\n"; // Just for tidying output
-
-    }
+    print_r($reportData);
 }
 
 
 function getReportData($reportId, $severity, $url) // Pass reportID, severity and $url from config file to return full report JSON
 {
-    $query = '?reportid=' . $reportId . '&severity=' . $severity;
+    $query = '?testing=1';
     $report = curlGet($url, $query);
     return $report;
 }

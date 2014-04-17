@@ -39,6 +39,11 @@ $reports = new \Library\Reports($pdo); // Create report object
 if ($_GET['listreports'] == '1') {
     echo json_encode($reports->listReports()); // Return list of reports imported into the system
 };
+
+if (array_key_exists('testing', $_GET)) {
+    echo json_encode($reports->getAllData('2','0.0'));
+}
+
 if (array_key_exists('reportid', $_GET)) {
     if (array_key_exists('severity', $_GET)) {
         echo json_encode($reports->getDetails($_GET['reportid'], $_GET['severity'])); // Return report details in JSON format.
