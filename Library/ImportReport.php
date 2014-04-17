@@ -93,7 +93,12 @@ class ImportReport extends \Library\ImportAbstract
 
         foreach ($host->ReportItem as $item) /* @var SimpleXMLElement $item */ {
             $attributes = array();
-
+            if (!$item->cvss_base_score)
+            {
+                $cvss = 0.0;
+            } else {
+                $cvss = $item->cvss_base_score;
+            }
 
             $addVuln = $this->getPdo()->prepare('INSERT OR REPLACE INTO vulnerabilities (pluginID, vulnerability, svc_name, severity, pluginFamily) VALUES(?, ?, ?, ?, ?)');
             $addVulnLink = $this->getPdo()->prepare('INSERT INTO host_vuln_link (report_id, host_id, plugin_id, port, protocol) VALUES(?, ?, ?, ?, ?)');
@@ -105,8 +110,8 @@ class ImportReport extends \Library\ImportAbstract
                 }
 
             }
-
-            $vulnAdded = $addVuln->execute(array($attributes['pluginID'], $item['pluginName'], $attributes['svc_name'], $attributes['severity'], $attributes['pluginFamily']));
+            print_r($attributes);
+            $vulnAdded = $addVuln->execute(array($attributes['pluginID'], $item['pluginName'], $attributes['svc_name'], $cvss, $attributes['pluginFamily']));
             if (!$vulnAdded) {
                 die('Sorry, we couldn\'t add the vulnerability: ' . $addVuln->errorInfo()[2] . PHP_EOL);
             }

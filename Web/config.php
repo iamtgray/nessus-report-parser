@@ -7,4 +7,4 @@
  */
 
 $url = "http://$_SERVER[SERVER_NAME]/reportAPI.php"; // Location of the reportAPI
-$severity = '0'; // Minumum Severity to grab from the DB
+$severity = '4.0'; // Minumum Severity to grab from the DB
