@@ -17,6 +17,7 @@ class ImportReport extends \Library\ImportAbstract
 
     public function createReport($xml) // Create report in database and spawn further functions for vulnerabilities and hosts.
     {
+        date_default_timezone_set('Europe/London');
         $this->xmlObj = simplexml_load_file($xml);
         $this->reportName = $this->xmlObj->Report[0]['name'] . PHP_EOL;
         $createReport = $this->getPdo()->prepare('INSERT INTO reports (report_name, created) VALUES(?, ?)');

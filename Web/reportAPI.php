@@ -33,7 +33,7 @@ try { // Create PDO Object
     exit;
 }
 
-$reports = new \Library\Reports($pdo, $config); // Create report object
+$reports = new \Library\Reports($pdo); // Create report object
 
 
 if ($_GET['listreports'] == '1') {
