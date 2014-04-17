@@ -22,6 +22,11 @@ if (array_key_exists('reportid', $_GET)) {
 
 $reportData = json_decode(getReportData($reportId, $severity, $url)); //Get all report data from the API. Returns JSON so decoding that too
 
+if (!$reportData)
+{
+    die("There is no data to display, try adjusting your severity settings");
+}
+
 outputVulnHostPort($reportData); // Picking out only the Vulnerabilities and each host, protocol and port from the full data.
 
 

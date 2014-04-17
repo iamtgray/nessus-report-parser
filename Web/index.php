@@ -21,7 +21,8 @@ foreach ($reports as $report) {
     echo 'Name: ' . $report->report_name . '<br>';
     echo 'Created: ' . $report->created . '<br>';
     echo '<a href="table.php?reportid=' . $report->id . '&severity=' . $severity . '">View this report</a><br>';
-    echo '<a href="table2.php?reportid=' . $report->id . '&severity=' . $severity . '">View the other report</a><br><br>';
+    echo '<a href="descriptions.php?reportid=' . $report->id . '&severity=' . $severity . '">View the vulnerability descriptions for this report - Severity not filtered</a><br>';
+    echo '<a href="table2.php?reportid=' . $report->id . '&severity=' . $severity . '">View the other report - WORK IN PROGRESS - Severity not filtered!</a><br><br>';
 }
 
 function getReportList($url)

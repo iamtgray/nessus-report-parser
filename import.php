@@ -6,8 +6,6 @@
  * Time: 10:19
  */
 
-$config = require(__DIR__ . '/config.php');
-
 if (isset($argv[1])) // Check that an argument has been given, if it has assume it is a Nessus report!
 {
     $xml = $argv[1];
@@ -38,7 +36,7 @@ try { // Build PDO Object
     exit;
 }
 
-$report = new \Library\ImportReport($pdo, $config); // Build report Object
+$report = new \Library\ImportReport($pdo); // Build report Object
 
 echo "Creating report" . PHP_EOL;
 

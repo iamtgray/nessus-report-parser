@@ -32,24 +32,19 @@ if (!$reportData)
 function outputVulnHostPort($reportData) // Pass full report array to return hosts, ports and protocols sorted by vulnerability
 {
     foreach ($reportData as $vulnerability) {
-        echo PHP_EOL . $vulnerability[0][0]->vulnerability . PHP_EOL; // Output Vulnerability name
+        echo PHP_EOL . $vulnerability[0][0]->vulnerability . " - " .  count($vulnerability[1]) . PHP_EOL; // Output Vulnerability name
 
-        if (count($vulnerability[0]) <= 4) // Setting up the loop variable to create 4 columns
-        {
-            $loop = 4 - count($vulnerability[0]);
-        } else {
-            $loop = 0;
-        }
-
+        $loop = 0;
         foreach ($vulnerability[1] as $hostObj) {
-            if ($loop < 3) {
-                print($hostObj->host_id . "\t" . strtoupper($hostObj->protocol) . "/" . $hostObj->port . "\t"); // Output the first 3 columns with tab delimiters
-                $loop++;
-            }
-
             if ($loop == 3) {
                 print($hostObj->host_id . "\t" . strtoupper($hostObj->protocol) . "/" . $hostObj->port . "\n"); // Output the final column with carriage return
                 $loop = 0;
+                continue;
+            }
+            if ($loop < 3) {
+                print($hostObj->host_id . "\t" . strtoupper($hostObj->protocol) . "/" . $hostObj->port . "\t"); // Output the first 3 columns with tab delimiters
+                $loop++;
+                continue;
             }
         }
 

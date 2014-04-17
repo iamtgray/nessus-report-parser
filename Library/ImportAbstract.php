@@ -17,42 +17,12 @@ class ImportAbstract
      */
     protected $pdo;
 
-    /**
-     * @var array $config
-     */
-    protected $config;
 
-    public function __construct($pdo, array $config)
+    public function __construct($pdo)
     {
         $this->setPdo($pdo);
-        $this->setConfig($config);
     }
 
-    /**
-     * setConfig sets the config property in object storage
-     *
-     * @param array $config
-     * @throws InvalidArgumentException
-     * @return StatusAbstract
-     */
-    public function setConfig($config)
-    {
-        if (empty($config)) {
-            throw new \InvalidArgumentException(__METHOD__ . ' cannot accept an empty config');
-        }
-        $this->config = $config;
-        return $this;
-    }
-
-    /**
-     * getConfig returns the config from the object
-     *
-     * @return array
-     */
-    public function getConfig()
-    {
-        return $this->config;
-    }
 
     /**
      * setPdo sets the pdo property in object storage

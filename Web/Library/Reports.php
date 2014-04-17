@@ -31,6 +31,25 @@ class Reports extends \Library\WebAbstract
         return $reports;
     }
 
+    function getDescriptions($reportID, $severity)
+    {
+
+        $returnArray = array();
+        $getVulnerabilites = $this->getPDO()->prepare('SELECT DISTINCT plugin_id FROM host_vuln_link WHERE report_id=?');
+        $getDetails = $this->getPdo()->prepare('SELECT * FROM vulnerabilities WHERE pluginID = ?');
+        $getVulnerabilites->execute(array($reportID));
+        $vulnerabilites = $getVulnerabilites->fetchall(\PDO::FETCH_COLUMN);
+
+        foreach ($vulnerabilites as $id => $vulnerability)
+        {
+            $getDetails->execute(array($vulnerability));
+            $details = $getDetails->fetchAll(\PDO::FETCH_ASSOC);
+            $returnArray[$vulnerability] = $details;
+        }
+
+        return $returnArray;
+    }
+
     function getAllData($reportID, $severity)
     { // Returns all data filtered by severity and report ID
         $getHostIDs = $this->getPdo()->prepare('SELECT DISTINCT host_id FROM host_vuln_link WHERE report_id=?');

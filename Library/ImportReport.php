@@ -100,7 +100,9 @@ class ImportReport extends \Library\ImportAbstract
                 $cvss = $item->cvss_base_score;
             }
 
-            $addVuln = $this->getPdo()->prepare('INSERT OR REPLACE INTO vulnerabilities (pluginID, vulnerability, svc_name, severity, pluginFamily) VALUES(?, ?, ?, ?, ?)');
+
+
+            $addVuln = $this->getPdo()->prepare('INSERT OR REPLACE INTO vulnerabilities (pluginID, vulnerability, svc_name, severity, pluginFamily, description, cve, risk_factor, see_also, solution, synopsis) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
             $addVulnLink = $this->getPdo()->prepare('INSERT INTO host_vuln_link (report_id, host_id, plugin_id, port, protocol) VALUES(?, ?, ?, ?, ?)');
 
             foreach ($item->attributes() as $attribute => $value) {
@@ -110,7 +112,7 @@ class ImportReport extends \Library\ImportAbstract
                 }
 
             }
-            $vulnAdded = $addVuln->execute(array($attributes['pluginID'], $item['pluginName'], $attributes['svc_name'], $cvss, $attributes['pluginFamily']));
+            $vulnAdded = $addVuln->execute(array($attributes['pluginID'], $item['pluginName'], $attributes['svc_name'], $cvss, $attributes['pluginFamily'], $item->description, $item->cve, $item->risk_factor, $item->see_also, $item->solution, $item->synopsis));
             if (!$vulnAdded) {
                 die('Sorry, we couldn\'t add the vulnerability: ' . $addVuln->errorInfo()[2] . PHP_EOL);
             }

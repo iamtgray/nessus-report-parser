@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="">
+    <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="Added output incase there are no reports on the system&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/descriptions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports.sqlite" afterPath="$PROJECT_DIR$/reports.sqlite" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ImportAbstract.php" afterPath="$PROJECT_DIR$/Library/ImportAbstract.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ImportReport.php" afterPath="$PROJECT_DIR$/Library/ImportReport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Library/Reports.php" afterPath="$PROJECT_DIR$/Web/Library/Reports.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/import.php" afterPath="$PROJECT_DIR$/import.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/index.php" afterPath="$PROJECT_DIR$/Web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/reportAPI.php" afterPath="$PROJECT_DIR$/Web/reportAPI.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/table.php" afterPath="$PROJECT_DIR$/Web/table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/table2.php" afterPath="$PROJECT_DIR$/Web/table2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nessus-report-parser.iws" />
@@ -29,7 +38,28 @@
       <file leaf-file-name="table2.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/table2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="74" selection-start="1636" selection-end="1636" vertical-scroll-proportion="-26.875" vertical-offset="0" max-vertical-offset="990">
+            <state line="62" column="22" selection-start="1908" selection-end="1908" vertical-scroll-proportion="-35.625" vertical-offset="0" max-vertical-offset="1065">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="descriptions.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/descriptions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="35" selection-start="1591" selection-end="1591" vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="1215">
+              <folding>
+                <marker date="1397747402000" expanded="true" signature="1156:2176" placeholder="..." />
+                <marker date="1397747402000" expanded="true" signature="1156:1266" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/import.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="40" selection-start="897" selection-end="897" vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
@@ -38,7 +68,30 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="1" selection-start="840" selection-end="840" vertical-scroll-proportion="0.35369775" vertical-offset="0" max-vertical-offset="933">
+            <state line="27" column="28" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.35369775" vertical-offset="0" max-vertical-offset="933">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImportReport.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Library/ImportReport.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="115" column="30" selection-start="4958" selection-end="4958" vertical-scroll-proportion="-68.75" vertical-offset="0" max-vertical-offset="2025">
+              <folding>
+                <marker date="1397744913000" expanded="true" signature="620:675" placeholder="INSERT INTO ..." />
+                <marker date="1397744913000" expanded="true" signature="1220:1271" placeholder="UPDATE repor..." />
+                <marker date="1397744913000" expanded="true" signature="1769:1822" placeholder="INSERT INTO ..." />
+                <marker date="1397744913000" expanded="true" signature="4352:4448" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bch_full_merged.nessus" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestReports/bch_full_merged.nessus">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4436" column="9" selection-start="559482" selection-end="559490" vertical-scroll-proportion="0.0" vertical-offset="66009" max-vertical-offset="636015">
               <folding />
             </state>
           </provider>
@@ -47,7 +100,7 @@
       <file leaf-file-name="reportAPI.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/reportAPI.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="10" selection-start="1088" selection-end="1088" vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="885">
+            <state line="43" column="0" selection-start="966" selection-end="966" vertical-scroll-proportion="-26.875" vertical-offset="0" max-vertical-offset="975">
               <folding>
                 <element signature="e#6#104#0" expanded="true" />
               </folding>
@@ -55,10 +108,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ImportAbstract.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Library/ImportAbstract.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="table.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="76" selection-start="954" selection-end="954" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1215">
+            <state line="29" column="1" selection-start="957" selection-end="957" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -67,17 +129,19 @@
       <file leaf-file-name="Reports.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/Library/Reports.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="19" selection-start="817" selection-end="817" vertical-scroll-proportion="-13.25" vertical-offset="102" max-vertical-offset="1740">
+            <state line="93" column="55" selection-start="3733" selection-end="3733" vertical-scroll-proportion="-9.5" vertical-offset="1092" max-vertical-offset="2025">
               <folding>
-                <marker date="1397739487000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
-                <marker date="1397739487000" expanded="true" signature="953:1014" placeholder="SELECT DISTI..host_vuln_link..." />
-                <marker date="1397739487000" expanded="true" signature="1067:1123" placeholder="SELECT host_..hosts..." />
-                <marker date="1397739487000" expanded="true" signature="1182:1259" placeholder="SELECT DISTI..host_vuln_link..." />
-                <marker date="1397739487000" expanded="true" signature="1311:1381" placeholder="SELECT vulne..vulnerabilities..." />
-                <marker date="1397739487000" expanded="true" signature="2867:2939" placeholder="SELECT DISTI..host_vuln_link..." />
-                <marker date="1397739487000" expanded="true" signature="2991:3077" placeholder="SELECT host_..host_vuln_link..." />
-                <marker date="1397739487000" expanded="true" signature="3130:3168" placeholder="SELECT host_..hosts..." />
-                <marker date="1397739487000" expanded="true" signature="3220:3285" placeholder="SELECT * FRO..vulnerabilities..." />
+                <marker date="1397746017000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+                <marker date="1397746017000" expanded="true" signature="943:1006" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1397746017000" expanded="true" signature="1058:1106" placeholder="SELECT * FRO..vulnerabilities..." />
+                <marker date="1397746017000" expanded="true" signature="1688:1749" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1397746017000" expanded="true" signature="1802:1858" placeholder="SELECT host_..hosts..." />
+                <marker date="1397746017000" expanded="true" signature="1917:1994" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1397746017000" expanded="true" signature="2046:2116" placeholder="SELECT vulne..vulnerabilities..." />
+                <marker date="1397746017000" expanded="true" signature="3602:3674" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1397746017000" expanded="true" signature="3726:3812" placeholder="SELECT host_..host_vuln_link..." />
+                <marker date="1397746017000" expanded="true" signature="3865:3903" placeholder="SELECT host_..hosts..." />
+                <marker date="1397746017000" expanded="true" signature="3955:4020" placeholder="SELECT * FRO..vulnerabilities..." />
               </folding>
             </state>
           </provider>
@@ -97,15 +161,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/mysql.schema" />
-        <option value="$PROJECT_DIR$/import.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Web/Library/WebAbstract.php" />
         <option value="$PROJECT_DIR$/Web/config.php" />
         <option value="$PROJECT_DIR$/Library/ImportReport.php" />
-        <option value="$PROJECT_DIR$/Web/table.php" />
-        <option value="$PROJECT_DIR$/Web/Library/Reports.php" />
-        <option value="$PROJECT_DIR$/Web/table2.php" />
+        <option value="$PROJECT_DIR$/import.php" />
+        <option value="$PROJECT_DIR$/Library/ImportAbstract.php" />
         <option value="$PROJECT_DIR$/Web/reportAPI.php" />
+        <option value="$PROJECT_DIR$/Web/table2.php" />
+        <option value="$PROJECT_DIR$/Web/Library/Reports.php" />
+        <option value="$PROJECT_DIR$/Web/descriptions.php" />
+        <option value="$PROJECT_DIR$/Web/table.php" />
         <option value="$PROJECT_DIR$/Web/index.php" />
       </list>
     </option>
@@ -172,6 +238,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nessus-report-parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nessus-report-parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -288,7 +372,11 @@
       <created>1397744186986</created>
       <updated>1397744186986</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added output incase there are no reports on the system&#10;">
+      <created>1397744266245</created>
+      <updated>1397744266245</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -301,7 +389,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -340,7 +428,8 @@
     <MESSAGE value="Added some error checking for no data responses&#10;" />
     <MESSAGE value="Completed secondary table" />
     <MESSAGE value="Added output incase there are no reports on the system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added output incase there are no reports on the system" />
+    <MESSAGE value="Added output incase there are no reports on the system&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added output incase there are no reports on the system&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -357,10 +446,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="129" column="0" selection-start="4781" selection-end="4781" vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="2025">
           <folding>
-            <marker date="1397740653000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1397740653000" expanded="true" signature="-1:-1" placeholder="UPDATE repor..." />
-            <marker date="1397740653000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1397740653000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1397744913000" expanded="true" signature="620:675" placeholder="INSERT INTO ..." />
+            <marker date="1397744913000" expanded="true" signature="1220:1271" placeholder="UPDATE repor..." />
+            <marker date="1397744913000" expanded="true" signature="1769:1822" placeholder="INSERT INTO ..." />
+            <marker date="1397744913000" expanded="true" signature="4352:4448" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -385,15 +474,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1275">
           <folding>
-            <marker date="1397739487000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
-            <marker date="1397739487000" expanded="true" signature="953:1014" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397739487000" expanded="true" signature="1067:1123" placeholder="SELECT host_..hosts..." />
-            <marker date="1397739487000" expanded="true" signature="1182:1259" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397739487000" expanded="true" signature="1311:1381" placeholder="SELECT vulne..vulnerabilities..." />
-            <marker date="1397739487000" expanded="true" signature="2867:2939" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397739487000" expanded="true" signature="2991:3077" placeholder="SELECT host_..host_vuln_link..." />
-            <marker date="1397739487000" expanded="true" signature="3130:3168" placeholder="SELECT host_..hosts..." />
-            <marker date="1397739487000" expanded="true" signature="3220:3285" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1397746017000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+            <marker date="1397746017000" expanded="true" signature="943:1006" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397746017000" expanded="true" signature="1058:1106" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1397746017000" expanded="true" signature="1688:1749" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397746017000" expanded="true" signature="1802:1858" placeholder="SELECT host_..hosts..." />
+            <marker date="1397746017000" expanded="true" signature="1917:1994" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397746017000" expanded="true" signature="2046:2116" placeholder="SELECT vulne..vulnerabilities..." />
+            <marker date="1397746017000" expanded="true" signature="3602:3674" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397746017000" expanded="true" signature="3726:3812" placeholder="SELECT host_..host_vuln_link..." />
+            <marker date="1397746017000" expanded="true" signature="3865:3903" placeholder="SELECT host_..hosts..." />
+            <marker date="1397746017000" expanded="true" signature="3955:4020" placeholder="SELECT * FRO..vulnerabilities..." />
           </folding>
         </state>
       </provider>
@@ -401,13 +492,6 @@
     <entry file="file://$PROJECT_DIR$/Library/ImportAbstract.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Library/ImportAbstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
@@ -426,13 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestReports/bch_full_merged.nessus">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4414" column="1" selection-start="557890" selection-end="557905" vertical-scroll-proportion="-9.461538" vertical-offset="65964" max-vertical-offset="636015">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="247" selection-end="247" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="165">
@@ -440,68 +517,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/import.php">
+    <entry file="file://$PROJECT_DIR$/TestReports/bch_full_merged.nessus">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="690">
+        <state line="4436" column="9" selection-start="559482" selection-end="559490" vertical-scroll-proportion="0.0" vertical-offset="66009" max-vertical-offset="636015">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/ImportAbstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Library/ImportReport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="40" selection-start="3759" selection-end="3759" vertical-scroll-proportion="-15.0" vertical-offset="930" max-vertical-offset="1995">
+        <state line="115" column="30" selection-start="4958" selection-end="4958" vertical-scroll-proportion="-68.75" vertical-offset="0" max-vertical-offset="2025">
           <folding>
-            <marker date="1397740653000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1397740653000" expanded="true" signature="-1:-1" placeholder="UPDATE repor..." />
-            <marker date="1397740653000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1397740653000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1397744913000" expanded="true" signature="620:675" placeholder="INSERT INTO ..." />
+            <marker date="1397744913000" expanded="true" signature="1220:1271" placeholder="UPDATE repor..." />
+            <marker date="1397744913000" expanded="true" signature="1769:1822" placeholder="INSERT INTO ..." />
+            <marker date="1397744913000" expanded="true" signature="4352:4448" placeholder="INSERT INTO ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/Library/Reports.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="19" selection-start="817" selection-end="817" vertical-scroll-proportion="-13.25" vertical-offset="102" max-vertical-offset="1740">
-          <folding>
-            <marker date="1397739487000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
-            <marker date="1397739487000" expanded="true" signature="953:1014" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397739487000" expanded="true" signature="1067:1123" placeholder="SELECT host_..hosts..." />
-            <marker date="1397739487000" expanded="true" signature="1182:1259" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397739487000" expanded="true" signature="1311:1381" placeholder="SELECT vulne..vulnerabilities..." />
-            <marker date="1397739487000" expanded="true" signature="2867:2939" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1397739487000" expanded="true" signature="2991:3077" placeholder="SELECT host_..host_vuln_link..." />
-            <marker date="1397739487000" expanded="true" signature="3130:3168" placeholder="SELECT host_..hosts..." />
-            <marker date="1397739487000" expanded="true" signature="3220:3285" placeholder="SELECT * FRO..vulnerabilities..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="76" selection-start="954" selection-end="954" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/table2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="74" selection-start="1636" selection-end="1636" vertical-scroll-proportion="-26.875" vertical-offset="0" max-vertical-offset="990">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/reportAPI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="10" selection-start="1088" selection-end="1088" vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="885">
+        <state line="43" column="0" selection-start="966" selection-end="966" vertical-scroll-proportion="-26.875" vertical-offset="0" max-vertical-offset="975">
           <folding>
             <element signature="e#6#104#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Web/table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="1" selection-start="957" selection-end="957" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/table2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="22" selection-start="1908" selection-end="1908" vertical-scroll-proportion="-35.625" vertical-offset="0" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="40" selection-start="897" selection-end="897" vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/descriptions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="35" selection-start="1591" selection-end="1591" vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="1215">
+          <folding>
+            <marker date="1397747402000" expanded="true" signature="1156:2176" placeholder="..." />
+            <marker date="1397747402000" expanded="true" signature="1156:1266" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/Library/Reports.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="55" selection-start="3733" selection-end="3733" vertical-scroll-proportion="-9.5" vertical-offset="1092" max-vertical-offset="2025">
+          <folding>
+            <marker date="1397746017000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+            <marker date="1397746017000" expanded="true" signature="943:1006" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397746017000" expanded="true" signature="1058:1106" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1397746017000" expanded="true" signature="1688:1749" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397746017000" expanded="true" signature="1802:1858" placeholder="SELECT host_..hosts..." />
+            <marker date="1397746017000" expanded="true" signature="1917:1994" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397746017000" expanded="true" signature="2046:2116" placeholder="SELECT vulne..vulnerabilities..." />
+            <marker date="1397746017000" expanded="true" signature="3602:3674" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1397746017000" expanded="true" signature="3726:3812" placeholder="SELECT host_..host_vuln_link..." />
+            <marker date="1397746017000" expanded="true" signature="3865:3903" placeholder="SELECT host_..hosts..." />
+            <marker date="1397746017000" expanded="true" signature="3955:4020" placeholder="SELECT * FRO..vulnerabilities..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="1" selection-start="840" selection-end="840" vertical-scroll-proportion="0.35369775" vertical-offset="0" max-vertical-offset="933">
+        <state line="27" column="28" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.35369775" vertical-offset="0" max-vertical-offset="933">
           <folding />
         </state>
       </provider>
