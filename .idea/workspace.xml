@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="Updated filenaming structure">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Web/table.php" afterPath="$PROJECT_DIR$/Web/hosts.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Web/table2.php" afterPath="$PROJECT_DIR$/Web/vulnerabilities.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/index.php" afterPath="$PROJECT_DIR$/Web/index.php" />
+    <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/hosts.php" afterPath="$PROJECT_DIR$/Web/hosts.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nessus-report-parser.iws" />
@@ -46,20 +44,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.3376206" vertical-offset="0" max-vertical-offset="933">
+            <state line="26" column="0" selection-start="1041" selection-end="1041" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hosts.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="hosts.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Web/hosts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1215">
-              <folding />
+            <state line="16" column="0" selection-start="477" selection-end="477" vertical-scroll-proportion="0.25723472" vertical-offset="0" max-vertical-offset="1140">
+              <folding>
+                <element signature="e#6#102#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,9 +89,9 @@
         <option value="$PROJECT_DIR$/Web/descriptions.php" />
         <option value="$PROJECT_DIR$/Web/table.php" />
         <option value="$PROJECT_DIR$/Web/table2.php" />
-        <option value="$PROJECT_DIR$/Web/hosts.php" />
         <option value="$PROJECT_DIR$/Web/vulnerabilities.php" />
         <option value="$PROJECT_DIR$/Web/index.php" />
+        <option value="$PROJECT_DIR$/Web/hosts.php" />
       </list>
     </option>
   </component>
@@ -299,13 +299,18 @@
       <created>1397749598913</created>
       <updated>1397749598913</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Updated file name structure">
+      <created>1398258917066</created>
+      <updated>1398258917066</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -317,7 +322,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -352,7 +356,8 @@
     <MESSAGE value="Completed secondary table" />
     <MESSAGE value="Added output incase there are no reports on the system" />
     <MESSAGE value="Added output incase there are no reports on the system&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added output incase there are no reports on the system&#10;" />
+    <MESSAGE value="Updated file name structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated file name structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -422,7 +427,9 @@
     <entry file="file://$PROJECT_DIR$/Web/hosts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="1" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1215">
-          <folding />
+          <folding>
+            <element signature="e#6#102#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -509,7 +516,9 @@
     <entry file="file://$PROJECT_DIR$/Web/hosts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="1" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1215">
-          <folding />
+          <folding>
+            <element signature="e#6#102#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -679,17 +688,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/hosts.php">
+    <entry file="file://$PROJECT_DIR$/Web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1215">
+        <state line="26" column="0" selection-start="1041" selection-end="1041" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/index.php">
+    <entry file="file://$PROJECT_DIR$/Web/hosts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.3376206" vertical-offset="0" max-vertical-offset="933">
-          <folding />
+        <state line="16" column="0" selection-start="477" selection-end="477" vertical-scroll-proportion="0.25723472" vertical-offset="0" max-vertical-offset="1140">
+          <folding>
+            <element signature="e#6#102#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -12,22 +12,17 @@ header('Content-Type: text/plain'); //Setting the page to plaintext so the tabs 
 
 echo "Click back to return to the report list\n";
 
-if (array_key_exists('reportid', $_GET)) {
-    $reportId = $_GET['reportid'];
-    if (array_key_exists('severity', $_GET)) {
-        $severity = $_GET['severity']; //Dealing with GET requests, setting $reportid and $severity variables
-    }
-}
-
+$reportId = $_GET['reportid'];
+$severity = $_GET['severity']; //Dealing with GET requests, setting $reportid and $severity variables
 
 $reportData = json_decode(getReportData($reportId, $severity, $url)); //Get all report data from the API. Returns JSON so decoding that too
-
-outputVulnHostPort($reportData); // Picking out only the Vulnerabilities and each host, protocol and port from the full data.
 
 if (!$reportData)
 {
     die("There is no data to display, try adjusting your severity settings");
 }
+
+outputVulnHostPort($reportData); // Picking out only the Vulnerabilities and each host, protocol and port from the full data.
 
 function outputVulnHostPort($reportData) // Pass full report array to return hosts, ports and protocols sorted by vulnerability
 {
