@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/hosts.php" afterPath="$PROJECT_DIR$/Web/hosts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/index.php" afterPath="$PROJECT_DIR$/Web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/reportAPI.php" afterPath="$PROJECT_DIR$/Web/reportAPI.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nessus-report-parser.iws" />
@@ -35,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reportAPI.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="reportAPI.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Web/reportAPI.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="966" selection-end="966" vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="900">
+            <state line="59" column="4" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.8681672" vertical-offset="0" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
@@ -47,16 +48,16 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="1041" selection-end="1041" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="675">
+            <state line="24" column="146" selection-start="977" selection-end="977" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hosts.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hosts.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/hosts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="61" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.46623793" vertical-offset="0" max-vertical-offset="1140">
+            <state line="29" column="61" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-17.5" vertical-offset="15" max-vertical-offset="1140">
               <folding>
                 <element signature="e#6#102#0" expanded="true" />
               </folding>
@@ -84,14 +85,14 @@
         <option value="$PROJECT_DIR$/Library/ImportReport.php" />
         <option value="$PROJECT_DIR$/import.php" />
         <option value="$PROJECT_DIR$/Library/ImportAbstract.php" />
-        <option value="$PROJECT_DIR$/Web/reportAPI.php" />
         <option value="$PROJECT_DIR$/Web/Library/Reports.php" />
         <option value="$PROJECT_DIR$/Web/descriptions.php" />
         <option value="$PROJECT_DIR$/Web/table.php" />
         <option value="$PROJECT_DIR$/Web/table2.php" />
         <option value="$PROJECT_DIR$/Web/vulnerabilities.php" />
-        <option value="$PROJECT_DIR$/Web/index.php" />
         <option value="$PROJECT_DIR$/Web/hosts.php" />
+        <option value="$PROJECT_DIR$/Web/index.php" />
+        <option value="$PROJECT_DIR$/Web/reportAPI.php" />
       </list>
     </option>
   </component>
@@ -307,7 +308,11 @@
       <created>1398258969271</created>
       <updated>1398258969271</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Removed vulnerability count from hosts.php">
+      <created>1398259000382</created>
+      <updated>1398259000382</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -362,7 +367,8 @@
     <MESSAGE value="Added output incase there are no reports on the system&#10;" />
     <MESSAGE value="Updated file name structure" />
     <MESSAGE value="added error checking to hosts.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="added error checking to hosts.php" />
+    <MESSAGE value="Removed vulnerability count from hosts.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed vulnerability count from hosts.php" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -679,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/reportAPI.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="966" selection-end="966" vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/vulnerabilities.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="19" selection-start="94" selection-end="94" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="1095">
@@ -695,17 +694,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1041" selection-end="1041" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="675">
+        <state line="24" column="146" selection-start="977" selection-end="977" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/hosts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="61" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.46623793" vertical-offset="0" max-vertical-offset="1140">
+        <state line="29" column="61" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-17.5" vertical-offset="15" max-vertical-offset="1140">
           <folding>
             <element signature="e#6#102#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/reportAPI.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="4" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.8681672" vertical-offset="0" max-vertical-offset="960">
+          <folding />
         </state>
       </provider>
     </entry>

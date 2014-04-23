@@ -55,5 +55,9 @@ if (array_key_exists('reportid', $_GET)) {
     if (array_key_exists('severity', $_GET)) {
         echo json_encode($reports->getDetails($_GET['reportid'], $_GET['severity'])); // Return report details in JSON format.
     }
+    else
+    {
+        die("You must pass a severity level");
+    }
 }
 

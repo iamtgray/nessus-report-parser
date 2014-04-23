@@ -20,9 +20,9 @@ foreach ($reports as $report) {
     echo 'ID: ' . $report->id . '<br>';
     echo 'Name: ' . $report->report_name . '<br>';
     echo 'Created: ' . $report->created . '<br>';
-    echo '<a href="hosts.php?reportid=' . $report->id . '&severity=' . $severity . '">View this report</a><br>';
-    echo '<a href="descriptions.php?reportid=' . $report->id . '&severity=' . $severity . '">View the vulnerability descriptions for this report - Severity not filtered</a><br>';
-    echo '<a href="vulnerabilities.php?reportid=' . $report->id . '&severity=' . $severity . '">View the other report - WORK IN PROGRESS - Severity not filtered!</a><br><br>';
+    echo '<a href="hosts.php?reportid=' . $report->id . '&severity=' . $severity . '">View the hosts output</a><br>';
+    echo '<a href="vulnerabilities.php?reportid=' . $report->id . '&severity=' . $severity . '">View the vulnerability output - WIP</a><br>';
+    echo '<a href="descriptions.php?reportid=' . $report->id . '&severity=' . $severity . '">View the vulnerability descriptions - WIP</a><br><br>';
 }
 
 function getReportList($url)
