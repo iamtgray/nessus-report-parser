@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/reports/vulnerabilities.php" afterPath="$PROJECT_DIR$/Web/reports/vulnerabilities.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="9458e3a5-bda5-41a1-83ca-af9becf5cedd" name="Default" comment="" />
     <ignored path="nessus-report-parser.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +26,7 @@
       <file leaf-file-name="vulnerabilities.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Web/reports/vulnerabilities.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="18" selection-start="2126" selection-end="2131" vertical-scroll-proportion="0.5819936" vertical-offset="567" max-vertical-offset="1695">
+            <state line="43" column="0" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.69131833" vertical-offset="0" max-vertical-offset="1845">
               <folding>
                 <element signature="e#6#113#0" expanded="true" />
               </folding>
@@ -40,7 +37,7 @@
       <file leaf-file-name="descriptions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/reports/descriptions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="25" selection-start="130" selection-end="130" vertical-scroll-proportion="-0.625" vertical-offset="30" max-vertical-offset="1155">
+            <state line="26" column="5" selection-start="825" selection-end="825" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
@@ -49,20 +46,20 @@
       <file leaf-file-name="Reports.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/Library/Reports.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="56" selection-start="1630" selection-end="1630" vertical-scroll-proportion="-17.958334" vertical-offset="169" max-vertical-offset="2055">
+            <state line="68" column="59" selection-start="2929" selection-end="2929" vertical-scroll-proportion="-23.125" vertical-offset="390" max-vertical-offset="2085">
               <folding>
-                <marker date="1398264112000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
-                <marker date="1398264112000" expanded="true" signature="944:1007" placeholder="SELECT DISTI..host_vuln_link..." />
-                <marker date="1398264112000" expanded="true" signature="1066:1258" placeholder="SELECT DISTI..host_vuln_link..." />
-                <marker date="1398264112000" expanded="true" signature="1310:1358" placeholder="SELECT * FRO..vulnerabilities..." />
-                <marker date="1398264112000" expanded="true" signature="1959:2020" placeholder="SELECT DISTI..host_vuln_link..." />
-                <marker date="1398264112000" expanded="true" signature="2073:2129" placeholder="SELECT host_..hosts..." />
-                <marker date="1398264112000" expanded="true" signature="2188:2409" placeholder="SELECT DISTI..host_vuln_link..." />
-                <marker date="1398264112000" expanded="true" signature="2461:2544" placeholder="SELECT vulne..vulnerabilities..." />
-                <marker date="1398264112000" expanded="true" signature="4114:4186" placeholder="SELECT DISTI..host_vuln_link..." />
-                <marker date="1398264112000" expanded="true" signature="4238:4324" placeholder="SELECT host_..host_vuln_link..." />
-                <marker date="1398264112000" expanded="true" signature="4377:4415" placeholder="SELECT host_..hosts..." />
-                <marker date="1398264112000" expanded="true" signature="4467:4532" placeholder="SELECT * FRO..vulnerabilities..." />
+                <marker date="1398265359000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+                <marker date="1398265359000" expanded="true" signature="944:1007" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1398265359000" expanded="true" signature="1066:1258" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1398265359000" expanded="true" signature="1310:1358" placeholder="SELECT * FRO..vulnerabilities..." />
+                <marker date="1398265359000" expanded="true" signature="1959:2020" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1398265359000" expanded="true" signature="2073:2154" placeholder="SELECT host_..hosts..." />
+                <marker date="1398265359000" expanded="true" signature="2213:2434" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1398265359000" expanded="true" signature="2486:2569" placeholder="SELECT vulne..vulnerabilities..." />
+                <marker date="1398265359000" expanded="true" signature="4269:4341" placeholder="SELECT DISTI..host_vuln_link..." />
+                <marker date="1398265359000" expanded="true" signature="4393:4479" placeholder="SELECT host_..host_vuln_link..." />
+                <marker date="1398265359000" expanded="true" signature="4532:4570" placeholder="SELECT host_..hosts..." />
+                <marker date="1398265359000" expanded="true" signature="4622:4687" placeholder="SELECT * FRO..vulnerabilities..." />
               </folding>
             </state>
           </provider>
@@ -112,11 +109,11 @@
         <option value="$PROJECT_DIR$/Web/hosts.php" />
         <option value="$PROJECT_DIR$/Web/reports/reportAPI.php" />
         <option value="$PROJECT_DIR$/Web/config.php" />
-        <option value="$PROJECT_DIR$/Web/reports/descriptions.php" />
         <option value="$PROJECT_DIR$/Web/reports/hosts.php" />
         <option value="$PROJECT_DIR$/Web/reportAPI.php" />
-        <option value="$PROJECT_DIR$/Web/Library/Reports.php" />
         <option value="$PROJECT_DIR$/Web/index.php" />
+        <option value="$PROJECT_DIR$/Web/Library/Reports.php" />
+        <option value="$PROJECT_DIR$/Web/reports/descriptions.php" />
         <option value="$PROJECT_DIR$/Web/reports/vulnerabilities.php" />
       </list>
     </option>
@@ -168,56 +165,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nessus-report-parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,7 +312,15 @@
       <created>1398264322748</created>
       <updated>1398264322748</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added IP address and severity sorting to vulnerability output">
+      <created>1398264520888</created>
+      <updated>1398264520888</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Updated messages if no name or OS is found">
+      <created>1398266109018</created>
+      <updated>1398266109018</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -423,7 +378,9 @@
     <MESSAGE value="Removed vulnerability count from hosts.php" />
     <MESSAGE value="Updated index menu items; added error check to reportAPI incase no severity was passed" />
     <MESSAGE value="Added all severity checks, and built output for vulnerability table." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added all severity checks, and built output for vulnerability table." />
+    <MESSAGE value="Added IP address and severity sorting to vulnerability output" />
+    <MESSAGE value="Updated messages if no name or OS is found" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated messages if no name or OS is found" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -505,18 +462,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="55" selection-start="3733" selection-end="3733" vertical-scroll-proportion="0.0" vertical-offset="1395" max-vertical-offset="2100">
           <folding>
-            <marker date="1398264112000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
-            <marker date="1398264112000" expanded="true" signature="944:1007" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="1066:1258" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="1310:1358" placeholder="SELECT * FRO..vulnerabilities..." />
-            <marker date="1398264112000" expanded="true" signature="1959:2020" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="2073:2129" placeholder="SELECT host_..hosts..." />
-            <marker date="1398264112000" expanded="true" signature="2188:2409" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="2461:2544" placeholder="SELECT vulne..vulnerabilities..." />
-            <marker date="1398264112000" expanded="true" signature="4114:4186" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="4238:4324" placeholder="SELECT host_..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="4377:4415" placeholder="SELECT host_..hosts..." />
-            <marker date="1398264112000" expanded="true" signature="4467:4532" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1398265359000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+            <marker date="1398265359000" expanded="true" signature="944:1007" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="1066:1258" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="1310:1358" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1398265359000" expanded="true" signature="1959:2020" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="2073:2154" placeholder="SELECT host_..hosts..." />
+            <marker date="1398265359000" expanded="true" signature="2213:2434" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="2486:2569" placeholder="SELECT vulne..vulnerabilities..." />
+            <marker date="1398265359000" expanded="true" signature="4269:4341" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="4393:4479" placeholder="SELECT host_..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="4532:4570" placeholder="SELECT host_..hosts..." />
+            <marker date="1398265359000" expanded="true" signature="4622:4687" placeholder="SELECT * FRO..vulnerabilities..." />
           </folding>
         </state>
       </provider>
@@ -597,18 +554,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="55" selection-start="3733" selection-end="3733" vertical-scroll-proportion="0.0" vertical-offset="1395" max-vertical-offset="2100">
           <folding>
-            <marker date="1398264112000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
-            <marker date="1398264112000" expanded="true" signature="944:1007" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="1066:1258" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="1310:1358" placeholder="SELECT * FRO..vulnerabilities..." />
-            <marker date="1398264112000" expanded="true" signature="1959:2020" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="2073:2129" placeholder="SELECT host_..hosts..." />
-            <marker date="1398264112000" expanded="true" signature="2188:2409" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="2461:2544" placeholder="SELECT vulne..vulnerabilities..." />
-            <marker date="1398264112000" expanded="true" signature="4114:4186" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="4238:4324" placeholder="SELECT host_..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="4377:4415" placeholder="SELECT host_..hosts..." />
-            <marker date="1398264112000" expanded="true" signature="4467:4532" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1398265359000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+            <marker date="1398265359000" expanded="true" signature="944:1007" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="1066:1258" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="1310:1358" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1398265359000" expanded="true" signature="1959:2020" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="2073:2154" placeholder="SELECT host_..hosts..." />
+            <marker date="1398265359000" expanded="true" signature="2213:2434" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="2486:2569" placeholder="SELECT vulne..vulnerabilities..." />
+            <marker date="1398265359000" expanded="true" signature="4269:4341" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="4393:4479" placeholder="SELECT host_..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="4532:4570" placeholder="SELECT host_..hosts..." />
+            <marker date="1398265359000" expanded="true" signature="4622:4687" placeholder="SELECT * FRO..vulnerabilities..." />
           </folding>
         </state>
       </provider>
@@ -648,18 +605,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1275">
           <folding>
-            <marker date="1398264112000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
-            <marker date="1398264112000" expanded="true" signature="944:1007" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="1066:1258" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="1310:1358" placeholder="SELECT * FRO..vulnerabilities..." />
-            <marker date="1398264112000" expanded="true" signature="1959:2020" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="2073:2129" placeholder="SELECT host_..hosts..." />
-            <marker date="1398264112000" expanded="true" signature="2188:2409" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="2461:2544" placeholder="SELECT vulne..vulnerabilities..." />
-            <marker date="1398264112000" expanded="true" signature="4114:4186" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="4238:4324" placeholder="SELECT host_..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="4377:4415" placeholder="SELECT host_..hosts..." />
-            <marker date="1398264112000" expanded="true" signature="4467:4532" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1398265359000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+            <marker date="1398265359000" expanded="true" signature="944:1007" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="1066:1258" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="1310:1358" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1398265359000" expanded="true" signature="1959:2020" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="2073:2154" placeholder="SELECT host_..hosts..." />
+            <marker date="1398265359000" expanded="true" signature="2213:2434" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="2486:2569" placeholder="SELECT vulne..vulnerabilities..." />
+            <marker date="1398265359000" expanded="true" signature="4269:4341" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="4393:4479" placeholder="SELECT host_..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="4532:4570" placeholder="SELECT host_..hosts..." />
+            <marker date="1398265359000" expanded="true" signature="4622:4687" placeholder="SELECT * FRO..vulnerabilities..." />
           </folding>
         </state>
       </provider>
@@ -744,36 +701,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/reports/descriptions.php">
+    <entry file="file://$PROJECT_DIR$/Web/Library/Reports.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="130" selection-end="130" vertical-scroll-proportion="-0.625" vertical-offset="30" max-vertical-offset="1155">
-          <folding />
+        <state line="68" column="59" selection-start="2929" selection-end="2929" vertical-scroll-proportion="-23.125" vertical-offset="390" max-vertical-offset="2085">
+          <folding>
+            <marker date="1398265359000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
+            <marker date="1398265359000" expanded="true" signature="944:1007" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="1066:1258" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="1310:1358" placeholder="SELECT * FRO..vulnerabilities..." />
+            <marker date="1398265359000" expanded="true" signature="1959:2020" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="2073:2154" placeholder="SELECT host_..hosts..." />
+            <marker date="1398265359000" expanded="true" signature="2213:2434" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="2486:2569" placeholder="SELECT vulne..vulnerabilities..." />
+            <marker date="1398265359000" expanded="true" signature="4269:4341" placeholder="SELECT DISTI..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="4393:4479" placeholder="SELECT host_..host_vuln_link..." />
+            <marker date="1398265359000" expanded="true" signature="4532:4570" placeholder="SELECT host_..hosts..." />
+            <marker date="1398265359000" expanded="true" signature="4622:4687" placeholder="SELECT * FRO..vulnerabilities..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/Library/Reports.php">
+    <entry file="file://$PROJECT_DIR$/Web/reports/descriptions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="56" selection-start="1630" selection-end="1630" vertical-scroll-proportion="-17.958334" vertical-offset="169" max-vertical-offset="2055">
-          <folding>
-            <marker date="1398264112000" expanded="true" signature="350:371" placeholder="SELECT * FRO..reports..." />
-            <marker date="1398264112000" expanded="true" signature="944:1007" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="1066:1258" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="1310:1358" placeholder="SELECT * FRO..vulnerabilities..." />
-            <marker date="1398264112000" expanded="true" signature="1959:2020" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="2073:2129" placeholder="SELECT host_..hosts..." />
-            <marker date="1398264112000" expanded="true" signature="2188:2409" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="2461:2544" placeholder="SELECT vulne..vulnerabilities..." />
-            <marker date="1398264112000" expanded="true" signature="4114:4186" placeholder="SELECT DISTI..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="4238:4324" placeholder="SELECT host_..host_vuln_link..." />
-            <marker date="1398264112000" expanded="true" signature="4377:4415" placeholder="SELECT host_..hosts..." />
-            <marker date="1398264112000" expanded="true" signature="4467:4532" placeholder="SELECT * FRO..vulnerabilities..." />
-          </folding>
+        <state line="26" column="5" selection-start="825" selection-end="825" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1125">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/reports/vulnerabilities.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="18" selection-start="2126" selection-end="2131" vertical-scroll-proportion="0.5819936" vertical-offset="567" max-vertical-offset="1695">
+        <state line="43" column="0" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.69131833" vertical-offset="0" max-vertical-offset="1845">
           <folding>
             <element signature="e#6#113#0" expanded="true" />
           </folding>
