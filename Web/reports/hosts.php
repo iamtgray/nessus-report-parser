@@ -6,7 +6,7 @@
  * Time: 09:39
  */
 
-require_once(__DIR__ . "/config.php");
+require_once(__DIR__ . "/../config.php");
 
 header('Content-Type: text/plain'); //Setting the page to plaintext so the tabs and carriage returns format correctly to allow cut&paste into pages
 
@@ -22,9 +22,9 @@ if (!$reportData)
     die("There is no data to display, try adjusting your severity settings");
 }
 
-outputVulnHostPort($reportData); // Picking out only the Vulnerabilities and each host, protocol and port from the full data.
+hostReport($reportData); // Picking out only the Vulnerabilities and each host, protocol and port from the full data.
 
-function outputVulnHostPort($reportData) // Pass full report array to return hosts, ports and protocols sorted by vulnerability
+function hostReport($reportData) // Pass full report array to return hosts, ports and protocols sorted by vulnerability
 {
     foreach ($reportData as $vulnerability) {
         echo PHP_EOL . $vulnerability[0][0]->vulnerability . PHP_EOL; // Output Vulnerability name
@@ -51,7 +51,7 @@ function outputVulnHostPort($reportData) // Pass full report array to return hos
 
 function getReportData($reportId, $severity, $url) // Pass reportID, severity and $url from config file to return full report JSON
 {
-    $query = '?reportid=' . $reportId . '&severity=' . $severity;
+    $query = '?report=1&reportid=' . $reportId . '&severity=' . $severity;
     $report = curlGet($url, $query);
     return $report;
 }

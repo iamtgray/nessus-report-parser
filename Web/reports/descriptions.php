@@ -6,26 +6,22 @@
  * Time: 09:39
  */
 
-require_once(__DIR__ . "/config.php");
+require_once(__DIR__ . "/../config.php");
 
 echo "Click back to return to the report list<br><br>";
 
-if (array_key_exists('reportid', $_GET)) {
-    $reportId = $_GET['reportid'];
-    if (array_key_exists('severity', $_GET)) {
-        $severity = $_GET['severity']; //Dealing with GET requests, setting $reportid and $severity variables
-    }
-}
-
+$reportId = $_GET['reportid'];
+$severity = $_GET['severity']; //Dealing with GET requests, setting $reportid and $severity variables
 
 $reportData = json_decode(getReportData($reportId, $severity, $url)); //Get all report data from the API. Returns JSON so decoding that too
-
-getDescriptions($reportData); // Picking out only the Vulnerabilities and each host, protocol and port from the full data.
 
 if (!$reportData)
 {
     die("There is no data to display, try adjusting your severity settings");
 }
+
+getDescriptions($reportData); // Picking out only the Vulnerabilities and each host, protocol and port from the full data.
+
 
 function getDescriptions($reportData) // Pass full report array to return hosts, ports and protocols sorted by vulnerability
 {
@@ -61,7 +57,7 @@ function getDescriptions($reportData) // Pass full report array to return hosts,
 
 function getReportData($reportId, $severity, $url) // Pass reportID, severity and $url from config file to return full report JSON
 {
-    $query = '?desc=1&reportid=' . $reportId . '&severity=' . $severity;
+    $query = '?report=3&reportid=' . $reportId . '&severity=' . $severity;
     $report = curlGet($url, $query);
     return $report;
 }

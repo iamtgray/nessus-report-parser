@@ -8,7 +8,8 @@
 
 require_once(__DIR__ . "/config.php");
 
-echo 'Imported Reports<br><br>';
+echo 'Imported Reports<br>';
+echo 'Your severity setting is: ' . $severity . ' <i>set in config.php</i><br><br>';
 $reports = json_decode(getReportList($url));
 
 if (!$reports)
@@ -20,9 +21,9 @@ foreach ($reports as $report) {
     echo 'ID: ' . $report->id . '<br>';
     echo 'Name: ' . $report->report_name . '<br>';
     echo 'Created: ' . $report->created . '<br>';
-    echo '<a href="hosts.php?reportid=' . $report->id . '&severity=' . $severity . '">View the hosts output</a><br>';
-    echo '<a href="vulnerabilities.php?reportid=' . $report->id . '&severity=' . $severity . '">View the vulnerability output - WIP</a><br>';
-    echo '<a href="descriptions.php?reportid=' . $report->id . '&severity=' . $severity . '">View the vulnerability descriptions - WIP</a><br><br>';
+    echo '<a href="reports/hosts.php?reportid=' . $report->id . '&severity=' . $severity . '">View the hosts output</a><br>';
+    echo '<a href="reports/vulnerabilities.php?reportid=' . $report->id . '&severity=' . $severity . '">View the vulnerability output</a><br>';
+    echo '<a href="reports/descriptions.php?reportid=' . $report->id . '&severity=' . $severity . '">View the vulnerability descriptions</a><br><br>';
 }
 
 function getReportList($url)

@@ -42,22 +42,45 @@ if (array_key_exists('listreports', $_GET)) {
 };
 
 if (array_key_exists('report', $_GET)) {
-    echo json_encode($reports->getAllData($_GET['reportid'], $_GET['severity']));
-    die();
-}
+    if (array_key_exists('reportid', $_GET)) {
+        switch($_GET['report']) {
 
-if (array_key_exists('desc', $_GET)) {
-    echo json_encode($reports->getDescriptions($_GET['reportid'], $_GET['severity']));
-    die();
-}
+            case 1:
+                if (array_key_exists('severity', $_GET)) {
+                    echo json_encode($reports->getHosts($_GET['reportid'], $_GET['severity'])); // Return report details in JSON format.
+                }
+                else
+                {
+                    die("You must pass a severity level");
+                }
+                break;
+            case 2:
+                if (array_key_exists('severity', $_GET)) {
+                    echo json_encode($reports->getVulnerabilities($_GET['reportid'], $_GET['severity']));
+                }
+                else
+                {
+                    die("You must pass a severity level");
+                }
+                break;
+            case 3:
+                if (array_key_exists('severity', $_GET)) {
+                    echo json_encode($reports->getDescriptions($_GET['reportid'], $_GET['severity']));
+                }
+                else
+                {
+                    die("You must pass a severity level");
+                }
+                break;
+        }
 
-if (array_key_exists('reportid', $_GET)) {
-    if (array_key_exists('severity', $_GET)) {
-        echo json_encode($reports->getDetails($_GET['reportid'], $_GET['severity'])); // Return report details in JSON format.
     }
     else
     {
-        die("You must pass a severity level");
+        die("You must pass a reportID");
     }
 }
+
+
+
 

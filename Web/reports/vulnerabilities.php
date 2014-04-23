@@ -6,7 +6,7 @@
  * Time: 09:39
  */
 
-require_once(__DIR__ . "/config.php");
+require_once(__DIR__ . "/../config.php");
 
 header('Content-Type: text/plain'); //Setting the page to plaintext so the tabs and carriage returns format correctly to allow cut&paste into pages
 
@@ -27,19 +27,45 @@ if (!$reportData)
 outputVulnHostPort($reportData); // Picking out only the Vulnerabilities and each host, protocol and port from the full data.
 
 
+
 function outputVulnHostPort($reportData) // Pass full report array to return hosts, ports and protocols sorted by vulnerability
 {
-
+    $data = array();
     foreach ($reportData as $hostData)
     {
+
         if (!$hostData->OS){
             $OS = "Unknown";
         } else {
             $OS = $hostData->OS;
         }
+
+        if (substr_count($OS, 'Windows') > 1)
+        {
+            $OS = "Microsoft Windows";
+        }
+
         foreach ($hostData->vulnerabilities as $vulnerability)
         {
-            print(str_replace(array("\r\n", "\r","\n"),"" ,$hostData->hostname) . "\t" . $OS . "\t" . $vulnerability->name . "\t" . "SOMETHING\t" . $vulnerability->severity . "\n");
+            $data[] = array(
+                                                'ip' => ip2long($hostData->hostname),
+                                                'os' => $OS,
+                                                'vuln' => $vulnerability->name,
+                                                'risk' => $vulnerability->risk,
+                                                'severity' => $vulnerability->severity);
+        }
+
+    }
+
+    $ip = "";
+    foreach ($data as $vuln)
+    {
+        if ($ip == long2ip($vuln['ip']))
+        {
+            print (" \t" . $vuln['os'] . "\t" . $vuln['vuln'] . "\t" . $vuln['risk'] . "\t" . $vuln['severity'] . "\n");
+        } else {
+            print (long2ip($vuln['ip']) . "\t" . $vuln['os'] . "\t" . $vuln['vuln'] . "\t" . $vuln['risk'] . "\t" . $vuln['severity'] . "\n");
+            $ip = long2ip($vuln['ip']);
         }
 
     }
