@@ -56,7 +56,7 @@
       <file leaf-file-name="hosts.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Web/hosts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="477" selection-end="477" vertical-scroll-proportion="0.25723472" vertical-offset="0" max-vertical-offset="1140">
+            <state line="29" column="61" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.46623793" vertical-offset="0" max-vertical-offset="1140">
               <folding>
                 <element signature="e#6#102#0" expanded="true" />
               </folding>
@@ -303,7 +303,11 @@
       <created>1398258917066</created>
       <updated>1398258917066</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added error checking to hosts.php">
+      <created>1398258969271</created>
+      <updated>1398258969271</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -357,7 +361,8 @@
     <MESSAGE value="Added output incase there are no reports on the system" />
     <MESSAGE value="Added output incase there are no reports on the system&#10;" />
     <MESSAGE value="Updated file name structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated file name structure" />
+    <MESSAGE value="added error checking to hosts.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="added error checking to hosts.php" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -697,7 +702,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/hosts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="477" selection-end="477" vertical-scroll-proportion="0.25723472" vertical-offset="0" max-vertical-offset="1140">
+        <state line="29" column="61" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.46623793" vertical-offset="0" max-vertical-offset="1140">
           <folding>
             <element signature="e#6#102#0" expanded="true" />
           </folding>
