@@ -1,7 +1,7 @@
 <?php
 /**
  * ReportGenerator -- import.php
- * User: Simon Beattie
+ * User: Simon Beattie @si_bt
  * Date: 14/04/2014
  * Time: 10:19
  */

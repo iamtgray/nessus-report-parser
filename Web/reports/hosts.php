@@ -1,7 +1,7 @@
 <?php
 /**
  * ReportGenerator -- host.php
- * User: Simon Beattie
+ * User: Simon Beattie @si_bt
  * Date: 15/04/2014
  * Time: 09:39
  */
