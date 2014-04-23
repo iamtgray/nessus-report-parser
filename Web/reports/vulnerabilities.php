@@ -10,8 +10,6 @@ require_once(__DIR__ . "/../config.php");
 
 header('Content-Type: text/plain'); //Setting the page to plaintext so the tabs and carriage returns format correctly to allow cut&paste into pages
 
-echo "Click back to return to the report list\n";
-
 
 $reportId = $_GET['reportid'];
 $severity = $_GET['severity'];
@@ -33,9 +31,8 @@ function outputVulnHostPort($reportData) // Pass full report array to return hos
     $data = array();
     foreach ($reportData as $hostData)
     {
-
         if (!$hostData->OS){
-            $OS = "Unknown";
+            $OS = "Unable to accurately identify";
         } else {
             $OS = $hostData->OS;
         }
@@ -45,10 +42,23 @@ function outputVulnHostPort($reportData) // Pass full report array to return hos
             $OS = "Microsoft Windows";
         }
 
+        if ($hostData->fqdn == "")
+        {
+            $name = $hostData->netbios;
+        } else {
+            $name = $hostData->fqdn;
+        }
+
+        if (!$name)
+        {
+            $name = "Unable to accurately identify";
+        }
+
         foreach ($hostData->vulnerabilities as $vulnerability)
         {
             $data[] = array(
                                                 'ip' => ip2long($hostData->hostname),
+                                                'name' => $name,
                                                 'os' => $OS,
                                                 'vuln' => $vulnerability->name,
                                                 'risk' => $vulnerability->risk,
@@ -76,9 +86,9 @@ function outputVulnHostPort($reportData) // Pass full report array to return hos
     {
         if ($ip == long2ip($vuln['ip']))
         {
-            print (" \t" . $vuln['os'] . "\t" . $vuln['vuln'] . "\t" . $vuln['risk'] . "\t" . $vuln['severity'] . "\n");
+            print (" \t" . " \t" . " \t" . $vuln['vuln'] . "\t" . $vuln['risk'] . "\t" . $vuln['severity'] . "\n");
         } else {
-            print (long2ip($vuln['ip']) . "\t" . $vuln['os'] . "\t" . $vuln['vuln'] . "\t" . $vuln['risk'] . "\t" . $vuln['severity'] . "\n");
+            print (long2ip($vuln['ip']) . "\t" . $vuln['name'] . "\t" . $vuln['os'] . "\t" . $vuln['vuln'] . "\t" . $vuln['risk'] . "\t" . $vuln['severity'] . "\n");
             $ip = long2ip($vuln['ip']);
         }
 

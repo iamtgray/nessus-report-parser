@@ -8,8 +8,6 @@
 
 require_once(__DIR__ . "/../config.php");
 
-echo "Click back to return to the report list<br><br>";
-
 $reportId = $_GET['reportid'];
 $severity = $_GET['severity']; //Dealing with GET requests, setting $reportid and $severity variables
 
