@@ -57,6 +57,20 @@ function outputVulnHostPort($reportData) // Pass full report array to return hos
 
     }
 
+    usort($data, function($firstArrayElement, $secondArrayElement)
+    {
+        $first = $firstArrayElement['ip'];
+        $second = $secondArrayElement['ip'];
+
+        $ret = strcmp($first, $second);
+        if($ret == 0)
+        {
+            return strcmp($secondArrayElement['severity'], $firstArrayElement['severity']);
+        }
+        return $ret;
+
+    });
+
     $ip = "";
     foreach ($data as $vuln)
     {
