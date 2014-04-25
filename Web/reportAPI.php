@@ -11,6 +11,8 @@
 // reportid=<REPORTID>&severity=<SEVERITY>
 // listreports=1
 
+// @review, you are using this SPL method and PDO creation twice, remove from this and the importer (directory above)
+// and pop into a single application bootstrap file to be included.
 spl_autoload_register(function ($className) {
     $fileName = __DIR__ . '/' . str_replace('\\', '/', $className) . '.php';
 
@@ -41,6 +43,7 @@ if (array_key_exists('listreports', $_GET)) {
     die();
 };
 
+// @review SO report is a sort of report type, so 1 is for hosts, 2 is for vulnerabilities, 3 is for descriptions.
 if (array_key_exists('report', $_GET)) {
     if (array_key_exists('reportid', $_GET)) {
         switch($_GET['report']) {
@@ -81,6 +84,38 @@ if (array_key_exists('report', $_GET)) {
     }
 }
 
+/**
+ * @review I have renamed report to reportType (because as far as I can tell, that's what it is)
+ * And also changed reportid to reportId (camel casing).
+ */
 
-
+if(array_key_exists('reportType', $_GET))
+{
+    if(!array_key_exists('reportId', $_GET) || !array_key_exists('severity', $_GET))
+    {
+        die('You must pass me both the report ID and the severity level you wish to view.');
+    }
+    
+    $reportType = $_GET['reportType'];
+    $reportId = $_GET['reportId'];
+    $severity = $_GET['severity'];
+    
+    switch($reportType)
+    {
+        case 'hosts':
+            echo json_encode($reports->getHosts($_GET['reportid'], $_GET['severity'])); // Return report details in JSON format.
+            break;
+            
+        case 'vulnerabilities':
+            echo json_encode($reports->getVulnerabilities($_GET['reportid'], $_GET['severity']));
+            break;
+            
+        case 'descriptions':
+            echo json_encode($reports->getDescriptions($_GET['reportid'], $_GET['severity']));
+            break;
+            
+        default:
+            die('Sorry, I don\t understand the reportType you requested.');
+    }
+}
 
