@@ -30,6 +30,9 @@ class ImportAbstract
      * @param \PDO $pdo
      * @throws InvalidArgumentException
      * @return StatusAbstract
+     * 
+     * @review As a minor point, I would suggest type hinting PDO in this argument. Someone could submit a string
+     * or anything else rather than a PDO object otherwise :)
      */
     public function setPdo($pdo)
     {
