@@ -17,10 +17,21 @@ class ImportReport extends \Library\ImportAbstract
 
     public function createReport($xml) // Create report in database and spawn further functions for vulnerabilities and hosts.
     {
+        /**
+         * @review I would set this either in the index file (your importReport.php) or rely on existing timezones
+         * set on the machine.
+         */
         date_default_timezone_set('Europe/London');
         $this->xmlObj = simplexml_load_file($xml);
+        
+        // @review I would confirm that the "Report" property exists in the XML (and then that it has a child with
+        // a name property)
+        
+        // @review Why are you adding a new line to the end of the report name? 
         $this->reportName = $this->xmlObj->Report[0]['name'] . PHP_EOL;
         $createReport = $this->getPdo()->prepare('INSERT INTO reports (report_name, created) VALUES(?, ?)');
+        
+        // @review in your array here, I would use the $this->reportName rather than calling from the object again
         $createdOk = $createReport->execute(array($this->xmlObj->Report[0]['name'], date('Y-m-d H:i:s')));
         if (!$createdOk) {
             die('Sorry, we couldn\'t create the new report: ' . $createReport->errorInfo()[2] . PHP_EOL);
@@ -47,6 +58,8 @@ class ImportReport extends \Library\ImportAbstract
     {
         $count = 1;
         $insertHost = $this->getPdo()->prepare('INSERT INTO hosts (report_id, host_name) VALUES(?, ?)');
+        
+        // @review same as above, I would check the ReportHost exists within Report's 0th entity.
         foreach ($this->xmlObj->Report[0]->ReportHost as $num => $host) {
             echo 'Importing host ' . $count . ' of ' . $this->xmlObj->Report[0]->ReportHost->count() . ' ... ';
             $insertedHost = $insertHost->execute(array($this->reportID, $host['name']));
@@ -66,6 +79,8 @@ class ImportReport extends \Library\ImportAbstract
         }
     }
 
+    // @review check the properties is an instance of SimpleXMLElement, although you're not using it elsewhere
+    // children could return empty.
     private function addHostDetails($hostID, $properties) // Add all host details such as FQDN, Operating system etc to the database
     {
         foreach ($properties as $tagItem) /* @var SimpleXMLElement $tagItem */ {
@@ -75,6 +90,9 @@ class ImportReport extends \Library\ImportAbstract
             $attribs = $tagItem->attributes();
             $name = $attribs['name'];
             $value = (string)$tagItem;
+            
+            // @review although I understand why you have prepared thus, you should still be aware that if the name
+            // has a char that mySQL would not accept as a column name, some icky errors could be thrown.
             $hostUpdate = $this->getPdo()->prepare('UPDATE hosts SET ' . str_replace('-', '_', $name) . '=? WHERE id=?');
 
             if (in_array($name, $names)) {
@@ -87,10 +105,13 @@ class ImportReport extends \Library\ImportAbstract
         }
     }
 
+    // @review your method comment (end of line 109) should really be in a DockBlock above the method, so it can be 
+    // Auto-detected by your IDE
     private function addVulnerability($host, $hostID) // Add vulnerabilities. This will add the vulnerability if it doesn't yet exist,
     { // and will add a link between the host and that vulnerability including the protocol and port recorded.
         $foundVulnerabilities = array();
 
+        // @review Again, check ReportItem exists, and that $host is an instance of SimpleXMLElement
         foreach ($host->ReportItem as $item) /* @var SimpleXMLElement $item */ {
             $attributes = array();
             if (!$item->cvss_base_score)
@@ -112,6 +133,7 @@ class ImportReport extends \Library\ImportAbstract
                 }
 
             }
+            // @review as a very minor point, I would split these into multiple lines (the array that is) so it's more easily readable.
             $vulnAdded = $addVuln->execute(array($attributes['pluginID'], $item['pluginName'], $attributes['svc_name'], $cvss, $attributes['pluginFamily'], $item->description, $item->cve, $item->risk_factor, $item->see_also, $item->solution, $item->synopsis));
             if (!$vulnAdded) {
                 die('Sorry, we couldn\'t add the vulnerability: ' . $addVuln->errorInfo()[2] . PHP_EOL);
@@ -123,6 +145,8 @@ class ImportReport extends \Library\ImportAbstract
                 die('Sorry, we couldn\'t add the vulnerability link: ' . $addVulnLink->errorInfo()[2] . PHP_EOL);
             }
 
+            // @review if all you are doing is counting this at the end, you might as just incremenet a variable 
+            // rather than creating a large array,
             $foundVulnerabilities[$attributes['pluginID']] = (string)$item['pluginName'];
 
         }
