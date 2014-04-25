@@ -4,6 +4,10 @@
  * User: Simon Beattie @si_bt
  * Date: 14/04/2014
  * Time: 10:18
+ * 
+ * 
+ * @review I would suggest putting a use PDO; at the top of this abstract, so that it's easy to spot going in
+ * that this abstract makes use of PDO.
  */
 
 namespace Library;
