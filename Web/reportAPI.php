@@ -103,15 +103,15 @@ if(array_key_exists('reportType', $_GET))
     switch($reportType)
     {
         case 'hosts':
-            echo json_encode($reports->getHosts($_GET['reportid'], $_GET['severity'])); // Return report details in JSON format.
+            echo json_encode($reports->getHosts($reportId, $severity)); // Return report details in JSON format.
             break;
             
         case 'vulnerabilities':
-            echo json_encode($reports->getVulnerabilities($_GET['reportid'], $_GET['severity']));
+            echo json_encode($reports->getVulnerabilities($reportId, $severity));
             break;
             
         case 'descriptions':
-            echo json_encode($reports->getDescriptions($_GET['reportid'], $_GET['severity']));
+            echo json_encode($reports->getDescriptions($reportId, $severity));
             break;
             
         default:
