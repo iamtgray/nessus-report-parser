@@ -40,4 +40,8 @@ $report = new \Library\ImportReport($pdo); // Build report Object
 
 echo "Creating report" . PHP_EOL;
 
+/**
+ * @review I would suggest checking that the file existis and is readable at this point. It's easier and nicer to handle
+ * errors at this low level that interacts directly with the CLI, than it is to throw an exception in the ImportReport lib
+ */
 print_r($report->createReport($xml)); // Output any return from report import.
